@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dropList_navigate_home"
+        android:title="Home"
+        android:icon="@drawable/home_24"
+        />
+    <item
+        android:id="@+id/dropList_navigate_profile"
+        android:title="Profile"
+        android:icon="@drawable/co_present_24"
+        />
+    <item
+        android:id="@+id/dropList_navigate_Help"
+        android:title="Help"
+        android:icon="@drawable/help_24"
+        />
+    <item
+        android:id="@+id/dropList_navigate_Logout"
+        android:title="Log out"
+        android:icon="@drawable/logout_24"
+        />
+</menu>

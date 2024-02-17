@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+          <item
+              android:id="@+id/neuron_navigate_home"
+              android:title="Home"
+              android:icon="@drawable/home_24"
+          />
+           <item
+              android:id="@+id/neuron_navigate_chat"
+              android:title="Chat"
+              android:icon="@drawable/chat_24"
+           />
+           <item
+              android:id="@+id/neuron_navigate_answer"
+              android:title="Question"
+              android:icon="@drawable/question_answer_24"
+        />
+</menu>

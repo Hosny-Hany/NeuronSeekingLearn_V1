@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_home">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_gide_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".10" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/top_gide_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/top_gide_line"
+        >
+        <Button
+            android:id="@+id/bottom1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:backgroundTint="@color/primaryColor"
+            android:text="Rood Maps"
+            android:textSize="30dp"
+            />
+        <Button
+            android:id="@+id/bottom2"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:backgroundTint="@color/primaryColor"
+            android:text="Chat to choose my track"
+            android:textSize="25dp"
+            android:layout_marginTop="70dp"
+            />
+        <Button
+            android:id="@+id/bottom3"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:backgroundTint="@color/primaryColor"
+            android:text="Search about a question "
+            android:textSize="25dp"
+            android:layout_marginTop="70dp"
+            />
+    </LinearLayout>
+    </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
