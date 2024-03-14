@@ -3,8 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="@layout/activity_register">
+
     <data>
 
+        <variable
+            name="vm"
+            type="com.route.neuronseekinglearn.register.RegisterViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -28,94 +32,90 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/username_layout"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                error="@{vm.usernameError}"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
-                android:hint="User Name"
-                android:textColorHint="@color/primaryColor"
-                app:boxCornerRadiusTopStart="10dp"
                 app:boxCornerRadiusBottomEnd="10dp"
-                app:boxStrokeColor="@color/Secondarycolor"
-                app:Error="@{}"
-                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-                >
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxStrokeColor="@color/Secondarycolor">
 
                 <EditText
                     android:id="@+id/user_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="User Name"
                     android:inputType="textPersonName"
-
-                    android:text="@={}" />
+                    android:text="@={vm.username}"
+                    android:textColorHint="@color/primaryColor" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/email_layout"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                error="@{vm.emailError}"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
-                android:hint="email"
-                android:textColorHint="@color/primaryColor"
-                app:boxCornerRadiusTopStart="10dp"
                 app:boxCornerRadiusBottomEnd="10dp"
-                app:boxStrokeColor="@color/Secondarycolor"
-                app:Error="@{}"
-                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-                >
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxStrokeColor="@color/Secondarycolor">
 
                 <EditText
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="email"
                     android:inputType="textEmailAddress"
-                    android:text="@={}" />
+                    android:text="@={vm.email}"
+                    android:textColorHint="@color/primaryColor" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/password_layout"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                error="@{vm.passwordError}"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="password"
-                android:textColorHint="@color/primaryColor"
-                app:passwordToggleEnabled="true"
                 android:layout_marginBottom="15dp"
-                app:boxCornerRadiusTopStart="10dp"
                 app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
                 app:boxStrokeColor="@color/Secondarycolor"
-                app:Error="@{}"
-                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-                >
+                app:passwordToggleEnabled="true">
 
                 <EditText
                     android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="password"
                     android:inputType="textPassword"
-                    android:text="@={}" />
+                    android:text="@={vm.password}"
+                    android:textColorHint="@color/primaryColor" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/password_confirmation_layout"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                error="@{vm.passwordconfirmError}"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
                 android:hint="Password Confirmation"
                 android:textColorHint="@color/primaryColor"
-                app:passwordToggleEnabled="true"
-                app:boxCornerRadiusTopStart="10dp"
                 app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
                 app:boxStrokeColor="@color/Secondarycolor"
-                app:Error="@{}"
-                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-                >
+                app:passwordToggleEnabled="true">
 
                 <EditText
                     android:id="@+id/password_confirmation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="Password Confirmation"
                     android:inputType="textPassword"
-                    android:text="@={}"
-                    />
+                    android:text="@={vm.passwordconfirm}"
+                    android:textColorHint="@color/primaryColor" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -123,38 +123,36 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="30dp"
-                app:layout_constraintTop_toBottomOf="@id/password_confirmation"
-                >
+                app:layout_constraintTop_toBottomOf="@id/password_confirmation">
+
                 <com.google.android.material.button.MaterialButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Create an Account"
-                    android:textSize="20dp"
                     android:backgroundTint="@color/primaryColor"
+                    android:gravity="center"
+                    android:onClick="@{()->vm.register()}"
+                    android:text="Create an Account"
                     android:textColor="@android:color/background_light"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@id/login"
-                    />
+                    android:textSize="20dp"
+                    app:layout_constraintTop_toTopOf="@id/login"></com.google.android.material.button.MaterialButton>
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/Account"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                >
+                android:layout_gravity="center">
+
                 <TextView
                     android:id="@+id/already_have_account"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Already have account ?"
                     android:textColor="@color/Secondarycolor"
-                    android:onClick="@{}"
                     android:textSize="18sp"
-                    app:layout_constraintStart_toStartOf="@id/Account"
                     app:layout_constraintEnd_toEndOf="@id/Account"
-                    app:layout_constraintTop_toTopOf="@id/Account"
-                    />
+                    app:layout_constraintStart_toStartOf="@id/Account"
+                    app:layout_constraintTop_toTopOf="@id/Account" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
