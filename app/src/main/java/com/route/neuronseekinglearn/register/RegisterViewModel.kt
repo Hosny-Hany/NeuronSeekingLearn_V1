@@ -38,8 +38,7 @@ class RegisterViewModel : ViewModel() {
                 isLoading.value = false
                 if (Task.isSuccessful) {
                     insertUsertoFirebase(Task.result.user?.uid)
-
-
+                    navigateToHome()
                 } else {
                     //showError
                     MessageLiveData.postValue(
@@ -49,6 +48,12 @@ class RegisterViewModel : ViewModel() {
                     )
                 }
             }
+    }
+
+    private fun navigateToHome() {
+        events.postValue(
+            RegisterEvent.NavigateToHome
+        )
     }
 
     private fun insertUsertoFirebase(uid: String?) {
@@ -114,7 +119,7 @@ class RegisterViewModel : ViewModel() {
         return isValid
     }
 
-    fun navegatToLogin() {
+    fun navigateToLogin() {
         events.postValue(RegisterEvent.NavigateToLogin)
     }
 }

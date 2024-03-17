@@ -141,7 +141,7 @@
                 android:id="@+id/already_have_account"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="@{()->vm.navegatToLogin()}"
+                android:onClick="@{()->vm.navigateToLogin()}"
                 android:text="Already have account ?"
                 android:textColor="@color/Secondarycolor"
                 android:textSize="18sp"
