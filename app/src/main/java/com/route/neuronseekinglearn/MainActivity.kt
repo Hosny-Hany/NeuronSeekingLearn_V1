@@ -11,10 +11,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
-        StartActivity()
+        startActivity()
     }
 
-    private fun StartActivity() {
+
+    private fun startActivity() {
         Handler(Looper.getMainLooper())
             .postDelayed({
                 val intent = Intent(this, RegisterActivity::class.java)

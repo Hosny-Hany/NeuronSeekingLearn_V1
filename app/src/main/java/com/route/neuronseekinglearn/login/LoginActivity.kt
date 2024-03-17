@@ -2,14 +2,13 @@ package com.route.neuronseekinglearn.login
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.databinding.DataBindingUtil
-import com.route.neuronseekinglearn.R
 import com.route.neuronseekinglearn.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
-    lateinit var ViewBinding: ActivityLoginBinding
+    private lateinit var viewBinding : ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        ViewBinding = DataBindingUtil.setContentView(this, R.layout.activity_login)
+        viewBinding = ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(viewBinding.root)
     }
 }

@@ -12,16 +12,16 @@ import com.route.neuronseekinglearn.login.LoginActivity
 import com.route.neuronseekinglearn.showDialog
 
 class RegisterActivity : AppCompatActivity() {
-    lateinit var ViewBinding: ActivityRegisterBinding
-    lateinit var ViewModel: RegisterViewModel
+    private lateinit var viewBinding: ActivityRegisterBinding
+    private lateinit var viewModel: RegisterViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        initviews()
-        SubscribeToLiveData()
+        initViews()
+        subscribeToLiveData()
     }
 
-    private fun SubscribeToLiveData() {
-        ViewModel.MessageLiveData.observe(this) { error ->
+    private fun subscribeToLiveData() {
+        viewModel.MessageLiveData.observe(this) { error ->
             showDialog(
                 message = error.message ?: "some thing want Error",
                 posMessage = "OK",
@@ -29,7 +29,7 @@ class RegisterActivity : AppCompatActivity() {
                 }
             )
         }
-        ViewModel.events.observe(this, ::handleEvents)
+        viewModel.events.observe(this, ::handleEvents)
     }
 
     private fun handleEvents(registerEvent: RegisterEvent?) {
@@ -48,11 +48,11 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
-    private fun initviews() {
-        ViewBinding = DataBindingUtil.setContentView(this, R.layout.activity_register)
-        ViewModel = ViewModelProvider(this)[(RegisterViewModel::class.java)]
-        ViewBinding.lifecycleOwner = this
-        ViewBinding.vm = ViewModel
+    private fun initViews() {
+        viewBinding = DataBindingUtil.setContentView(this, R.layout.activity_register)
+        viewModel = ViewModelProvider(this)[(RegisterViewModel::class.java)]
+        viewBinding.lifecycleOwner = this
+        viewBinding.vm = viewModel
     }
 
     private fun NavigateToLogin() {
