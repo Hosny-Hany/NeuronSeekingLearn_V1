@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "77400555305",
+    "project_id": "neuron-seeking-learn",
+    "storage_bucket": "neuron-seeking-learn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77400555305:android:bc90594d50ce7b52c14138",
+        "android_client_info": {
+          "package_name": "com.route.neuronseekinglearn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-q_axwYnb-kK-2LazlBJvbhIhAK4Nf3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

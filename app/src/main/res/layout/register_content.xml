@@ -102,7 +102,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
                 android:hint="Password Confirmation"
-                android:textColorHint="@color/primaryColor"
                 app:boxCornerRadiusBottomEnd="10dp"
                 app:boxCornerRadiusTopStart="10dp"
                 app:boxStrokeColor="@color/Secondarycolor"
@@ -137,23 +136,17 @@
                     app:layout_constraintTop_toTopOf="@id/login"></com.google.android.material.button.MaterialButton>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/Account"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center">
 
-                <TextView
-                    android:id="@+id/already_have_account"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Already have account ?"
-                    android:textColor="@color/Secondarycolor"
-                    android:textSize="18sp"
-                    app:layout_constraintEnd_toEndOf="@id/Account"
-                    app:layout_constraintStart_toStartOf="@id/Account"
-                    app:layout_constraintTop_toTopOf="@id/Account" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/already_have_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->vm.navegatToLogin()}"
+                android:text="Already have account ?"
+                android:textColor="@color/Secondarycolor"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

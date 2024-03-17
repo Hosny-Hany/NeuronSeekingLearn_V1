@@ -4,15 +4,22 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import com.route.neuronseekinglearn.ChatAppError
+import com.route.neuronseekinglearn.common.SingleLiveEvent
+import com.route.neuronseekinglearn.firestore.UsersDao
+import com.route.neuronseekinglearn.message
+import com.route.neuronseekinglearn.model.User
+import com.route.neuronseekinglearn.sessionProvider
 
 class RegisterViewModel : ViewModel() {
-    val ErrorLiveData = MutableLiveData<ChatAppError>()
+    val MessageLiveData = SingleLiveEvent<message>()
     val isLoading = MutableLiveData<Boolean>()
+    val events = SingleLiveEvent<RegisterEvent>()
+
     val username = MutableLiveData<String>()
     val email = MutableLiveData<String>()
     val password = MutableLiveData<String>()
     val passwordconfirm = MutableLiveData<String>()
+
     val usernameError = MutableLiveData<String?>()
     val emailError = MutableLiveData<String?>()
     val passwordError = MutableLiveData<String?>()
@@ -30,21 +37,52 @@ class RegisterViewModel : ViewModel() {
             .addOnCompleteListener { Task ->
                 isLoading.value = false
                 if (Task.isSuccessful) {
-                    ErrorLiveData.postValue(
-                        ChatAppError(
-                            message = Task.result.user?.uid
-                        )
-                    )
+                    insertUsertoFirebase(Task.result.user?.uid)
+
 
                 } else {
                     //showError
-                    ErrorLiveData.postValue(
-                        ChatAppError(
+                    MessageLiveData.postValue(
+                        message(
                             message = Task.exception?.localizedMessage
                         )
                     )
                 }
             }
+    }
+
+    private fun insertUsertoFirebase(uid: String?) {
+        val user = User(
+            id = uid,
+            userName = username.value,
+            email = email.value
+        )
+        UsersDao.createUser(user) { Task ->
+            if (Task.isSuccessful) {
+                isLoading.value = false
+                MessageLiveData.postValue(
+                    message(
+                        message = "User Registed Succesfull",
+                        posActionName = "ok",
+                        OnPosAction = {
+                            sessionProvider.user = user
+                            events.postValue(RegisterEvent.NavigateToHome)
+                            //Save user Id
+                            // Navegat To Home
+                        }
+                    )
+                )
+
+            } else {
+                MessageLiveData.postValue(
+                    message(
+                        message = Task.exception?.localizedMessage
+                    )
+                )
+
+            }
+        }
+
     }
 
     private fun ValidForm(): Boolean {
@@ -74,5 +112,9 @@ class RegisterViewModel : ViewModel() {
             passwordconfirmError.postValue(null)
         }
         return isValid
+    }
+
+    fun navegatToLogin() {
+        events.postValue(RegisterEvent.NavigateToLogin)
     }
 }

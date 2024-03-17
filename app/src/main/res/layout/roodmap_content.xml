@@ -2,8 +2,6 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:showIn="@layout/activity_roodmap">
 
 
@@ -19,84 +17,82 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent=".10" />
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/top_gide_line"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            >
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_gide_line">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintTop_toBottomOf="@id/top_gide_line"
                 android:scrollbars="vertical"
-                >
+                app:layout_constraintTop_toBottomOf="@id/top_gide_line">
+
                 <Button
                     android:id="@+id/bottom1"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:text="Front End"
-                    android:textSize="25dp"
                     android:backgroundTint="@color/primaryColor"
-                    />
+                    android:text="Front End"
+                    android:textSize="25dp" />
+
                 <Button
                     android:id="@+id/bottom2"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:text="Back End"
-                    android:textSize="25dp"
                     android:layout_marginTop="15dp"
                     android:backgroundTint="@color/primaryColor"
-                    />
+                    android:text="Back End"
+                    android:textSize="25dp" />
+
                 <Button
                     android:id="@+id/bottom3"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:text="Android Developer"
-                    android:textSize="25dp"
                     android:layout_marginTop="15dp"
                     android:backgroundTint="@color/primaryColor"
-                    />
+                    android:text="Android Developer"
+                    android:textSize="25dp" />
 
                 <Button
                     android:id="@+id/bottom4"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:text="Flutter Developer"
-                    android:textSize="25dp"
                     android:layout_marginTop="15dp"
                     android:backgroundTint="@color/primaryColor"
-                    />
+                    android:text="Flutter Developer"
+                    android:textSize="25dp" />
 
                 <Button
                     android:id="@+id/bottom5"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:text="Data Science"
-                    android:textSize="25dp"
                     android:layout_marginTop="15dp"
                     android:backgroundTint="@color/primaryColor"
-                    />
+                    android:text="Data Science"
+                    android:textSize="25dp" />
+
                 <Button
                     android:id="@+id/bottom6"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:text="Full Stack"
-                    android:textSize="25dp"
                     android:layout_marginTop="15dp"
                     android:backgroundTint="@color/primaryColor"
-                    />
+                    android:text="Full Stack"
+                    android:textSize="25dp" />
+
                 <Button
                     android:id="@+id/bottom7"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:text="Python Developer"
-                    android:textSize="25dp"
                     android:layout_marginTop="15dp"
                     android:backgroundTint="@color/primaryColor"
-                    />
+                    android:text="Python Developer"
+                    android:textSize="25dp" />
             </LinearLayout>
 
         </FrameLayout>

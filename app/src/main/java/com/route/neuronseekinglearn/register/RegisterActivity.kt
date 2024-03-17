@@ -7,8 +7,9 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import com.route.neuronseekinglearn.R
 import com.route.neuronseekinglearn.databinding.ActivityRegisterBinding
+import com.route.neuronseekinglearn.home.HomeActivity
 import com.route.neuronseekinglearn.login.LoginActivity
-import com.route.neuronseekinglearn.showMessage
+import com.route.neuronseekinglearn.showDialog
 
 class RegisterActivity : AppCompatActivity() {
     lateinit var ViewBinding: ActivityRegisterBinding
@@ -20,15 +21,30 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun SubscribeToLiveData() {
-        ViewModel.ErrorLiveData.observe(this) { error ->
-            showMessage(
+        ViewModel.MessageLiveData.observe(this) { error ->
+            showDialog(
                 message = error.message ?: "some thing want Error",
-                posActionName = "OK",
-                posAction = { DialogInterface, i ->
-                    DialogInterface.dismiss()
+                posMessage = "OK",
+                posAction = {
                 }
-
             )
+        }
+        ViewModel.events.observe(this, ::handleEvents)
+    }
+
+    private fun handleEvents(registerEvent: RegisterEvent?) {
+        when (registerEvent) {
+            RegisterEvent.NavigateToHome -> {
+                NavigateToHome()
+            }
+
+            RegisterEvent.NavigateToLogin -> {
+                NavigateToLogin()
+            }
+
+            else -> {
+
+            }
         }
     }
 
@@ -37,15 +53,18 @@ class RegisterActivity : AppCompatActivity() {
         ViewModel = ViewModelProvider(this)[(RegisterViewModel::class.java)]
         ViewBinding.lifecycleOwner = this
         ViewBinding.vm = ViewModel
-        ViewBinding.content.alreadyHaveAccount
-            .setOnClickListener {
-                StartActivity()
-            }
     }
 
-    private fun StartActivity() {
+    private fun NavigateToLogin() {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
         finish()
     }
+
+    private fun NavigateToHome() {
+        val intent = Intent(this, HomeActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
+
 }
