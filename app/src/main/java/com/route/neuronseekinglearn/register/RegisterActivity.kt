@@ -7,7 +7,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import com.route.neuronseekinglearn.R
 import com.route.neuronseekinglearn.databinding.ActivityRegisterBinding
-import com.route.neuronseekinglearn.home.HomeActivity
+import com.route.neuronseekinglearn.home.tabs.HomeActivity
 import com.route.neuronseekinglearn.login.LoginActivity
 import com.route.neuronseekinglearn.showDialog
 
@@ -35,11 +35,11 @@ class RegisterActivity : AppCompatActivity() {
     private fun handleEvents(registerEvent: RegisterEvent?) {
         when (registerEvent) {
             RegisterEvent.NavigateToHome -> {
-                NavigateToHome()
+                navigateToHome()
             }
 
             RegisterEvent.NavigateToLogin -> {
-                NavigateToLogin()
+                navigateToLogin()
             }
 
             else -> {
@@ -55,13 +55,13 @@ class RegisterActivity : AppCompatActivity() {
         viewBinding.vm = viewModel
     }
 
-    private fun NavigateToLogin() {
+    private fun navigateToLogin() {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
         finish()
     }
 
-    private fun NavigateToHome() {
+    private fun navigateToHome() {
         val intent = Intent(this, HomeActivity::class.java)
         startActivity(intent)
         finish()
