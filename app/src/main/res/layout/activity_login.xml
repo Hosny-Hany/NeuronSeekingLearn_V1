@@ -40,6 +40,7 @@
 
         <include
             android:id="@+id/login"
+            app:vm = "@{vm}"
             layout="@layout/login_content" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

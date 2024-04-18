@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.route.neuronseekinglearn.databinding.ActivityLoginBinding
-import com.route.neuronseekinglearn.home.HomeActivity
+import com.route.neuronseekinglearn.home.tabs.HomeActivity
 import com.route.neuronseekinglearn.register.RegisterActivity
 import com.route.neuronseekinglearn.showDialog
 
