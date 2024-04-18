@@ -23,7 +23,7 @@ class RegisterActivity : AppCompatActivity() {
     private fun subscribeToLiveData() {
         viewModel.MessageLiveData.observe(this) { error ->
             showDialog(
-                message = error.message ?: "some thing want Error",
+                Message = error.message ?: "some thing want Error",
                 posMessage = "OK",
                 posAction = {
                 }

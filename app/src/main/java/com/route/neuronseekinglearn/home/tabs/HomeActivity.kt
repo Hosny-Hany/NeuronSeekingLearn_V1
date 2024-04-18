@@ -15,6 +15,7 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         viewBinding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_home)
+        handleSidebar()
         navigateToHomeFragment()
     }
 

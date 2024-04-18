@@ -33,7 +33,7 @@ fun Fragment.showDialog(
 }
 
 fun Activity.showDialog(
-    message: String,
+    Message: String,
     posMessage: String? = null,
     posAction: OnDialogActionClick? = null,
     negMessage: String? = null,

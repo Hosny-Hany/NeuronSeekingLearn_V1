@@ -4,15 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.appcompat.app.AppCompatActivity
-import androidx.databinding.DataBindingUtil.setContentView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.route.neuronseekinglearn.R
-import com.route.neuronseekinglearn.databinding.ActivityHomeBinding
 import com.route.neuronseekinglearn.databinding.FragmentHomeBinding
+import com.route.neuronseekinglearn.home.tabs.chatboat.ChatBoatFragment
 import com.route.neuronseekinglearn.home.tabs.roadmap.RoadMapFragment
 
 class HomeFragment : Fragment() {
@@ -52,7 +48,7 @@ class HomeFragment : Fragment() {
     private fun handleEvents(event: HomeEvents) {
         when (event) {
             HomeEvents.NavigateToChooseTrack -> {
-
+                navigateToChooseTrack()
             }
 
             HomeEvents.NavigateToRoadMaps -> {
@@ -60,7 +56,7 @@ class HomeFragment : Fragment() {
             }
 
             HomeEvents.NavigateToChatBot -> {
-
+                navigateToChatBoat()
             }
         }
     }
@@ -68,7 +64,23 @@ class HomeFragment : Fragment() {
     private fun navigateToRoadMaps() {
         activity?.supportFragmentManager
             ?.beginTransaction()
-            ?.replace(R.id.fragment_container,RoadMapFragment())
+            ?.replace(R.id.fragment_container, RoadMapFragment())
+            ?.addToBackStack(null)
+            ?.commit()
+    }
+
+    private fun navigateToChatBoat() {
+        activity?.supportFragmentManager
+            ?.beginTransaction()
+            ?.replace(R.id.fragment_container, ChatBoatFragment())
+            ?.addToBackStack(null)
+            ?.commit()
+    }
+
+    private fun navigateToChooseTrack() {
+        activity?.supportFragmentManager
+            ?.beginTransaction()
+            ?.replace(R.id.fragment_container, ChatBoatFragment())
             ?.addToBackStack(null)
             ?.commit()
     }

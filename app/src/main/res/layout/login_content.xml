@@ -68,7 +68,6 @@
                 app:boxCornerRadiusTopStart="10dp"
                 app:boxStrokeColor="@color/Secondarycolor"
                 app:passwordToggleEnabled="true">
-                >
 
                 <EditText
                     android:id="@+id/password"
@@ -85,16 +84,17 @@
                 android:layout_width="300dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:onClick="@{()->vm.login()}">
+                >
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/primaryColor"
                     android:gravity="center"
-                    android:text="Sign In"
+                    android:text="@string/sign_in"
+                    android:onClick="@{()->vm.login()}"
                     android:textColor="@android:color/background_light"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     app:layout_constraintTop_toTopOf="@id/SignIn" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
