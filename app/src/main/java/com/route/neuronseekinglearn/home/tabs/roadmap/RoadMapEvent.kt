@@ -1,4 +1,11 @@
 package com.route.neuronseekinglearn.home.tabs.roadmap
 
-class RoadMapEvent {
+enum class RoadMapEvent {
+    NavigateToFrontEnd,
+    NavigateToBackEnd,
+    NavigateToAndroid,
+    NavigateToFlutter,
+    NavigateToFullStack,
+    NavigateToDataScience,
+    NavigateToPython
 }

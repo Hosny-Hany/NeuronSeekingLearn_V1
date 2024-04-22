@@ -4,6 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="@layout/activity_roodmap">
 
+    <data>
+
+        <variable
+            name="vm"
+            type="com.route.neuronseekinglearn.home.tabs.roadmap.RoadMapViewModel" />
+    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -37,6 +43,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:backgroundTint="@color/primaryColor"
+                    android:onClick="@{()->vm.navigateToFrontEnd()}"
                     android:text="Front End"
                     android:textSize="25dp" />
 
@@ -46,6 +53,7 @@
                     android:layout_height="80dp"
                     android:layout_marginTop="15dp"
                     android:backgroundTint="@color/primaryColor"
+                    android:onClick="@{()->vm.navigateToBackEnd()}"
                     android:text="Back End"
                     android:textSize="25dp" />
 
@@ -55,6 +63,7 @@
                     android:layout_height="80dp"
                     android:layout_marginTop="15dp"
                     android:backgroundTint="@color/primaryColor"
+                    android:onClick="@{()->vm.navigateToAndroid()}"
                     android:text="Android Developer"
                     android:textSize="25dp" />
 
@@ -64,6 +73,7 @@
                     android:layout_height="80dp"
                     android:layout_marginTop="15dp"
                     android:backgroundTint="@color/primaryColor"
+                    android:onClick="@{()->vm.navigateToFlutter()}"
                     android:text="Flutter Developer"
                     android:textSize="25dp" />
 
@@ -73,6 +83,7 @@
                     android:layout_height="80dp"
                     android:layout_marginTop="15dp"
                     android:backgroundTint="@color/primaryColor"
+                    android:onClick="@{()->vm.navigateToDataScience()}"
                     android:text="Data Science"
                     android:textSize="25dp" />
 
@@ -82,6 +93,7 @@
                     android:layout_height="80dp"
                     android:layout_marginTop="15dp"
                     android:backgroundTint="@color/primaryColor"
+                    android:onClick="@{()->vm.navigateToFullStack()}"
                     android:text="Full Stack"
                     android:textSize="25dp" />
 
@@ -91,6 +103,7 @@
                     android:layout_height="80dp"
                     android:layout_marginTop="15dp"
                     android:backgroundTint="@color/primaryColor"
+                    android:onClick="@{()->vm.navigateToPython()}"
                     android:text="Python Developer"
                     android:textSize="25dp" />
             </LinearLayout>
