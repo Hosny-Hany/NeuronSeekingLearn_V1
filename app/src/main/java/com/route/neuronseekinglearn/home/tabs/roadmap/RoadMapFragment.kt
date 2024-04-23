@@ -12,6 +12,17 @@ import com.route.neuronseekinglearn.databinding.FragmentRoadMapBinding
 class RoadMapFragment : Fragment() {
     private lateinit var viewBinding: FragmentRoadMapBinding
     private lateinit var viewModel: RoadMapViewModel
+
+    var names = listOf(
+        "FrontEnd",
+        "BackEnd",
+        "Android Developer",
+        "Flutter Developer",
+        "Data Science",
+        "Full Stack",
+        "Python Developer"
+    )
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -23,9 +34,17 @@ class RoadMapFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this)[RoadMapViewModel::class.java]
-
         initViews()
+        initRecyclerview()
     }
+
+    lateinit var adapter: RoadMapRecyclerAdapter
+
+    private fun initRecyclerview() {
+        adapter = RoadMapRecyclerAdapter(names)
+        viewBinding.RoadRecyclerView.adapter = adapter
+    }
+
 
     private fun initViews() {
         viewBinding.vm = viewModel
