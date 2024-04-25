@@ -1,7 +1,9 @@
 package com.route.neuronseekinglearn.register
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
@@ -62,6 +64,15 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun navigateToHome() {
+        var sharedPreferences = getSharedPreferences("User Data", Context.MODE_PRIVATE)
+        Toast.makeText(this, "data saved successfully", Toast.LENGTH_SHORT).show()
+        var editor = sharedPreferences.edit()
+        var UserName = viewModel.username.value.toString()
+        var UserEmail = viewModel.email.value.toString()
+        editor.putString("User_Name", UserName)
+        editor.putString("User_Email", UserEmail)
+        editor.commit()
+
         val intent = Intent(this, HomeActivity::class.java)
         startActivity(intent)
         finish()

@@ -47,10 +47,6 @@ class HomeFragment : Fragment() {
 
     private fun handleEvents(event: HomeEvents) {
         when (event) {
-            HomeEvents.NavigateToChooseTrack -> {
-                navigateToChooseTrack()
-            }
-
             HomeEvents.NavigateToRoadMaps -> {
                 navigateToRoadMaps()
             }
@@ -70,14 +66,6 @@ class HomeFragment : Fragment() {
     }
 
     private fun navigateToChatBoat() {
-        activity?.supportFragmentManager
-            ?.beginTransaction()
-            ?.replace(R.id.fragment_container, ChatBoatFragment())
-            ?.addToBackStack(null)
-            ?.commit()
-    }
-
-    private fun navigateToChooseTrack() {
         activity?.supportFragmentManager
             ?.beginTransaction()
             ?.replace(R.id.fragment_container, ChatBoatFragment())

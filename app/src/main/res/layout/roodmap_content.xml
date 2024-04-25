@@ -43,7 +43,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:backgroundTint="@color/primaryColor"
-                    android:onClick="@{()->vm.navigateToFrontEnd()}"
                     android:text="Front End"
                     android:textSize="25dp" />
 
@@ -53,7 +52,6 @@
                     android:layout_height="80dp"
                     android:layout_marginTop="15dp"
                     android:backgroundTint="@color/primaryColor"
-                    android:onClick="@{()->vm.navigateToBackEnd()}"
                     android:text="Back End"
                     android:textSize="25dp" />
 
@@ -63,7 +61,6 @@
                     android:layout_height="80dp"
                     android:layout_marginTop="15dp"
                     android:backgroundTint="@color/primaryColor"
-                    android:onClick="@{()->vm.navigateToAndroid()}"
                     android:text="Android Developer"
                     android:textSize="25dp" />
 
@@ -73,7 +70,6 @@
                     android:layout_height="80dp"
                     android:layout_marginTop="15dp"
                     android:backgroundTint="@color/primaryColor"
-                    android:onClick="@{()->vm.navigateToFlutter()}"
                     android:text="Flutter Developer"
                     android:textSize="25dp" />
 
@@ -83,8 +79,8 @@
                     android:layout_height="80dp"
                     android:layout_marginTop="15dp"
                     android:backgroundTint="@color/primaryColor"
-                    android:onClick="@{()->vm.navigateToDataScience()}"
                     android:text="Data Science"
+                    android:textColor="@color/Secondarycolor"
                     android:textSize="25dp" />
 
                 <Button
@@ -95,6 +91,7 @@
                     android:backgroundTint="@color/primaryColor"
                     android:onClick="@{()->vm.navigateToFullStack()}"
                     android:text="Full Stack"
+                    android:textColor="@color/Secondarycolor"
                     android:textSize="25dp" />
 
                 <Button
@@ -103,8 +100,8 @@
                     android:layout_height="80dp"
                     android:layout_marginTop="15dp"
                     android:backgroundTint="@color/primaryColor"
-                    android:onClick="@{()->vm.navigateToPython()}"
                     android:text="Python Developer"
+                    android:textColor="@color/Secondarycolor"
                     android:textSize="25dp" />
             </LinearLayout>
 

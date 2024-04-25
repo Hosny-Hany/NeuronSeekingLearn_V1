@@ -18,9 +18,20 @@ class RoadMapRecyclerAdapter(val Names: List<String>) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.ViewBinding.bottom1.text = Names[position]
+        var onItemClickListner: onItemClickListners? = null
+        if (onItemClickListner != null) holder.ViewBinding.root
+            .setOnClickListener {
+                onItemClickListner?.onItemClick(position, Names[position])
+            }
     }
 
     override fun getItemCount(): Int = Names.size
+
+    var onItemClickListner: onItemClickListners? = null
+
+    fun interface onItemClickListners {
+        fun onItemClick(position: Int, name: String)
+    }
 
     class ViewHolder(val ViewBinding: RoadMapItemBinding) :
         RecyclerView.ViewHolder(ViewBinding.root)
