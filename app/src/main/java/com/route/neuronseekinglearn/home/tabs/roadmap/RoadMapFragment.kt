@@ -1,17 +1,17 @@
 package com.route.neuronseekinglearn.home.tabs.roadmap
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import com.route.neuronseekinglearn.R
+import com.route.neuronseekinglearn.Constant
 import com.route.neuronseekinglearn.databinding.FragmentRoadMapBinding
+import com.route.neuronseekinglearn.home.tabs.details.RoadDetailsFragment
 
 class RoadMapFragment : Fragment() {
     private lateinit var viewBinding: FragmentRoadMapBinding
-    private lateinit var viewModel: RoadMapViewModel
 
     var names = listOf(
         "FrontEnd",
@@ -24,17 +24,19 @@ class RoadMapFragment : Fragment() {
     )
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        viewBinding = FragmentRoadMapBinding.inflate(layoutInflater)
+    ): View? {
+        viewBinding = FragmentRoadMapBinding.inflate(inflater, container, false)
         return viewBinding.root
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel = ViewModelProvider(this)[RoadMapViewModel::class.java]
-        initViews()
+        //  viewModel = ViewModelProvider(this)[RoadMapViewModel::class.java]
+        // initViews()
         initRecyclerview()
     }
 
@@ -42,10 +44,23 @@ class RoadMapFragment : Fragment() {
 
     private fun initRecyclerview() {
         adapter = RoadMapRecyclerAdapter(names)
+        adapter.onItemClickListner =
+            RoadMapRecyclerAdapter.onItemClickListners { position, name ->
+
+                startRoadMapDetails(position, name)
+            }
         viewBinding.RoadRecyclerView.adapter = adapter
     }
 
+    private fun startRoadMapDetails(index: Int, name: String) {
+        val intent = Intent(context, RoadDetailsFragment::class.java)
+        intent.putExtra(Constant.RoadMap_INDEX, index + 1)
+        intent.putExtra(Constant.RoadMap_NAME, name)
+        startActivity(intent)
+    }
+}
 
+/*
     private fun initViews() {
         viewBinding.vm = viewModel
         viewBinding.lifecycleOwner = this
@@ -148,4 +163,4 @@ class RoadMapFragment : Fragment() {
             ?.commit()
     }
 
-}
+*/

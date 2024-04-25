@@ -2,16 +2,8 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:context=".home.tabs.roadmap.RoadMapFragment">
 
-    <data>
-
-        <variable
-            name="vm"
-            type="com.route.neuronseekinglearn.home.tabs.roadmap.RoadMapViewModel" />
-    </data>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -59,8 +51,7 @@
 
         <include
             android:id="@+id/content"
-            layout="@layout/roodmap_content"
-            app:viewModel="@{vm}" />
+            layout="@layout/roodmap_content" />
 
     </LinearLayout>
 
