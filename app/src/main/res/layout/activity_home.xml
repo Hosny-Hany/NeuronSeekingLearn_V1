@@ -15,18 +15,18 @@
 
 
 
-<!--    <com.google.android.material.navigation.NavigationView-->
-<!--        android:id="@+id/nav_view"-->
-<!--        android:layout_width="150dp"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_gravity="start"-->
-<!--        android:background="@color/material_dynamic_neutral0"-->
-<!--        android:fitsSystemWindows="true"-->
-<!--        app:itemIconSize="10dp"-->
-<!--        app:itemIconTint="@color/home_navigate_bar"-->
-<!--        app:itemTextColor="@color/home_navigate_bar"-->
-<!--        app:menu="@menu/droplist_navigation_bar"-->
-<!--        />-->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/material_dynamic_neutral0"
+        android:fitsSystemWindows="true"
+        app:itemIconSize="10dp"
+        app:itemIconTint="@color/home_navigate_bar"
+        app:itemTextColor="@color/home_navigate_bar"
+        app:menu="@menu/droplist_navigation_bar"
+        />
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

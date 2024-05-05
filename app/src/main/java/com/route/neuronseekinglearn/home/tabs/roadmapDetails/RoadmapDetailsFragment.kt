@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.route.neuronseekinglearn.databinding.FragmentRoadmapDetailsBinding
 
-private const val ARG_TRACK_NAME = "track_name"
+private const val ARG_TRACK_NAME = "track_name "
 class RoadmapDetailsFragment : Fragment() {
     private lateinit var viewBinding: FragmentRoadmapDetailsBinding
     private var trackName: String? = null
