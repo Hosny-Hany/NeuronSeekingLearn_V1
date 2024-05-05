@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.route.neuronseekinglearn.databinding.RoadMapItemBinding
 
-class RoadMapRecyclerAdapter(val Names: List<String>) :
+class RoadMapRecyclerAdapter(private val tracksName: List<String>) :
     RecyclerView.Adapter<RoadMapRecyclerAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -17,23 +17,23 @@ class RoadMapRecyclerAdapter(val Names: List<String>) :
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.ViewBinding.bottom1.text = Names[position]
-        var onItemClickListner: onItemClickListners? = null
-        if (onItemClickListner != null) holder.ViewBinding.root
-            .setOnClickListener {
-                onItemClickListner?.onItemClick(position, Names[position])
-            }
+        holder.viewBinding.bottom1.text = tracksName[position]
+        val trackName = tracksName[position]
+       holder.viewBinding.bottom1.setOnClickListener{
+
+           onTrackClickListeners.onItemClick(trackName)
+       }
     }
 
-    override fun getItemCount(): Int = Names.size
+    override fun getItemCount(): Int = tracksName.size
 
-    var onItemClickListner: onItemClickListners? = null
+    lateinit var onTrackClickListeners: OnTrackClickListeners
 
-    fun interface onItemClickListners {
-        fun onItemClick(position: Int, name: String)
+    fun interface OnTrackClickListeners {
+        fun onItemClick( trackName: String)
     }
 
-    class ViewHolder(val ViewBinding: RoadMapItemBinding) :
-        RecyclerView.ViewHolder(ViewBinding.root)
+    class ViewHolder(val viewBinding: RoadMapItemBinding) :
+        RecyclerView.ViewHolder(viewBinding.root)
 
 }

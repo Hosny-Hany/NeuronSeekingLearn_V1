@@ -1,19 +1,19 @@
 package com.route.neuronseekinglearn.home.tabs.roadmap
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.route.neuronseekinglearn.Constant
+import com.route.neuronseekinglearn.R
 import com.route.neuronseekinglearn.databinding.FragmentRoadMapBinding
-import com.route.neuronseekinglearn.home.tabs.details.RoadDetailsFragment
+import com.route.neuronseekinglearn.home.tabs.roadmapDetails.RoadmapDetailsFragment
 
 class RoadMapFragment : Fragment() {
     private lateinit var viewBinding: FragmentRoadMapBinding
 
-    var names = listOf(
+
+    private var names = listOf(
         "FrontEnd",
         "BackEnd",
         "Android Developer",
@@ -27,7 +27,7 @@ class RoadMapFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         viewBinding = FragmentRoadMapBinding.inflate(inflater, container, false)
         return viewBinding.root
 
@@ -35,28 +35,30 @@ class RoadMapFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        //  viewModel = ViewModelProvider(this)[RoadMapViewModel::class.java]
-        // initViews()
         initRecyclerview()
     }
 
-    lateinit var adapter: RoadMapRecyclerAdapter
+    private lateinit var adapter: RoadMapRecyclerAdapter
 
     private fun initRecyclerview() {
-        adapter = RoadMapRecyclerAdapter(names)
-        adapter.onItemClickListner =
-            RoadMapRecyclerAdapter.onItemClickListners { position, name ->
+        // You forgot to add layout manager
 
-                startRoadMapDetails(position, name)
-            }
+
+        adapter = RoadMapRecyclerAdapter(names)
         viewBinding.RoadRecyclerView.adapter = adapter
+
+        adapter.onTrackClickListeners =
+           RoadMapRecyclerAdapter.OnTrackClickListeners { trackName->
+               startRoadMapDetails(trackName)
+           }
     }
 
-    private fun startRoadMapDetails(index: Int, name: String) {
-        val intent = Intent(context, RoadDetailsFragment::class.java)
-        intent.putExtra(Constant.RoadMap_INDEX, index + 1)
-        intent.putExtra(Constant.RoadMap_NAME, name)
-        startActivity(intent)
+    private fun startRoadMapDetails(trackName: String) {
+        activity?.supportFragmentManager?.beginTransaction()
+            ?.replace(R.id.fragment_container,
+                RoadmapDetailsFragment.newInstance(trackName)
+            )?.addToBackStack(null)
+            ?.commit()
     }
 }
 
