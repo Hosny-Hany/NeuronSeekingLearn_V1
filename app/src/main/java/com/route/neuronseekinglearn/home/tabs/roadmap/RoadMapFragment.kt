@@ -20,7 +20,7 @@ class RoadMapFragment : Fragment() {
         "Flutter Developer",
         "Data Science",
         "Full Stack",
-        "Python Developer"
+        "UI/UX"
     )
 
     override fun onCreateView(
@@ -48,121 +48,17 @@ class RoadMapFragment : Fragment() {
         viewBinding.RoadRecyclerView.adapter = adapter
 
         adapter.onTrackClickListeners =
-           RoadMapRecyclerAdapter.OnTrackClickListeners { trackName->
-               startRoadMapDetails(trackName)
-           }
+            RoadMapRecyclerAdapter.OnTrackClickListeners { trackName ->
+                startRoadMapDetails(trackName)
+            }
     }
 
     private fun startRoadMapDetails(trackName: String) {
         activity?.supportFragmentManager?.beginTransaction()
-            ?.replace(R.id.fragment_container,
+            ?.replace(
+                R.id.fragment_container,
                 RoadmapDetailsFragment.newInstance(trackName)
             )?.addToBackStack(null)
             ?.commit()
     }
 }
-
-/*
-    private fun initViews() {
-        viewBinding.vm = viewModel
-        viewBinding.lifecycleOwner = this
-        observeOnLiveData()
-
-    }
-
-    private fun observeOnLiveData() {
-        viewModel.events.observe(this) { event ->
-            handleEvents(event)
-        }
-
-    }
-
-    private fun handleEvents(event: RoadMapEvent) {
-        when (event) {
-            RoadMapEvent.NavigateToFrontEnd -> {
-                navigateToFrontEnd()
-            }
-
-            RoadMapEvent.NavigateToBackEnd -> {
-                navigateToBackEnd()
-            }
-
-            RoadMapEvent.NavigateToFlutter -> {
-                navigateToFlutter()
-            }
-
-            RoadMapEvent.NavigateToAndroid -> {
-                navigateToAndroid()
-            }
-
-            RoadMapEvent.NavigateToFullStack -> {
-                navigateToFullStack()
-            }
-
-            RoadMapEvent.NavigateToDataScience -> {
-                navigateToDataScience()
-            }
-
-            RoadMapEvent.NavigateToPython -> {
-                navigateToPython()
-            }
-        }
-    }
-
-    private fun navigateToPython() {
-        activity?.supportFragmentManager
-            ?.beginTransaction()
-            ?.replace(R.id.fragment_container, RoadMapFragment())
-            ?.addToBackStack(null)
-            ?.commit()
-    }
-
-    private fun navigateToDataScience() {
-        activity?.supportFragmentManager
-            ?.beginTransaction()
-            ?.replace(R.id.fragment_container, RoadMapFragment())
-            ?.addToBackStack(null)
-            ?.commit()
-    }
-
-    private fun navigateToFullStack() {
-        activity?.supportFragmentManager
-            ?.beginTransaction()
-            ?.replace(R.id.fragment_container, RoadMapFragment())
-            ?.addToBackStack(null)
-            ?.commit()
-    }
-
-    private fun navigateToAndroid() {
-        activity?.supportFragmentManager
-            ?.beginTransaction()
-            ?.replace(R.id.fragment_container, RoadMapFragment())
-            ?.addToBackStack(null)
-            ?.commit()
-    }
-
-    private fun navigateToFlutter() {
-        activity?.supportFragmentManager
-            ?.beginTransaction()
-            ?.replace(R.id.fragment_container, RoadMapFragment())
-            ?.addToBackStack(null)
-            ?.commit()
-    }
-
-    private fun navigateToBackEnd() {
-        activity?.supportFragmentManager
-            ?.beginTransaction()
-            ?.replace(R.id.fragment_container, RoadMapFragment())
-            ?.addToBackStack(null)
-            ?.commit()
-    }
-
-    private fun navigateToFrontEnd() {
-        activity?.supportFragmentManager
-            ?.beginTransaction()
-            ?.replace(R.id.fragment_container, RoadMapFragment())
-            ?.addToBackStack(null)
-            ?.commit()
-    }
-
-*/

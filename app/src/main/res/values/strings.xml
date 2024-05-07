@@ -1,17 +1,17 @@
 <resources>
-    <string name="app_name">Neuron Seeking Learn</string>
-    <color name="buttom">#FF453A</color>
-    <string name="open_string">Open</string>
-    <string name="close_string">Close</string>
-    <string name="road_maps">Road Maps</string>
-    <string name="chat_to_choose_my_track">Chat to choose my track</string>
-    <string name="search_about_a_question">Search about a question</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="home">Home</string>
-    <string name="sign_in">Sign In</string>
+	<string name="app_name">Neuron Seeking Learn</string>
+	<color name="buttom">#FF453A</color>
+	<string name="open_string">Open</string>
+	<string name="close_string">Close</string>
+	<string name="road_maps">Road Maps</string>
+	<string name="chat_to_choose_my_track">Chat to choose my track</string>
+	<string name="search_about_a_question">Search about a question</string>
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+	<string name="home">Home</string>
+	<string name="sign_in">Sign In</string>
 
-    <string name="androidContent">
+	<string name="androidContent">
     "Part 1 ( Java SE)
 1. Introduction to Java Programming
 • Overview.
@@ -82,5 +82,430 @@
 • firebase to push Notifications
 • one signal push notifications SDK
     </string>
+	<string name="BackEndContent">
+        Backend development involves several key components:	
+•	Server
+•	Database 
+•	Business Logic
+•	APIs (Application Programming Interfaces)
+•	Security
+•	Performance Optimization
+ 	Backend development can be done using various programming languages and frameworks, such as:
+•	Java/Spring
+•	Python/Django or Flask
+•	Node.js/Express
+•	Ruby on Rails
+•	PHP/Laravel
+•	ASP.NET Core
 
+ 	components of the internet include:
+•	World Wide Web (WWW)
+•	IP Addresses
+•	Protocols
+•	Web Browsers
+•	Search Engines
+•	Email
+•	Social Media
+
+ 	How the internet work?
+ 	What is http?
+ 	 What is Brwosers ?
+ 	How the brwosers work?
+•	User Interface
+•	Rendering Engine
+•	Networking
+•	Cache
+•	Cookies and Storage
+•	Security
+•	Extensions and Plugins
+ 	Dns and how it work?
+ 	What is the domain name?
+ 	brief overview the hosting
+•	Server Space
+•	Server Management
+•	Internet Connectivity
+•	Types of Hosting
+•	Domain Integration
+ 	brief overview of the process learn a language:
+•	Choose a Language
+•	Study Resources
+•	Explore Frameworks
+•	Hands-On Practice
+•	Collaborate and Seek Feedback
+•	Build Real-World Projects
+•	Stay updated
+
+ 	What is Java? 
+ 	What is Java script ?
+ 	What is Rupy?
+ 	What is C# 
+ 	What is GO?
+ 	What is PHP?
+ 	What is Python?
+ 	Whay is Rust?
+
+ 	What is Git?
+ 	Repo Hosting Services:
+•	GitHub
+•	GitLab
+•	BitBucket
+•	How to choose the best source code repository
+ 	What is the Relational Database?
+•	PostgreSQL 
+ 	PostgreSQL supports the most important programming languages:
+•	Python
+•	Java
+•	C/C++
+•	C#
+•	Node.js
+•	Go
+•	Ruby
+•	Perl
+•	Tcl
+ 	MySQL
+ 	Maria DB
+ 	MS SQL
+ 	oracle
+    </string>
+	<string name="FullStackContent">
+        Before entering into the definition of the Full- Stack Developer Job
+        let us see the most important jobs present in any project:
+	UI/UX Designer
+	Front-End Developer
+	Back-End Developer
+	Testers  
+	Business Analyst
+	Dev Ops 
+	Sales And Marketing
+	Project Manager
+ 	project devide into the group of layer:
+	Presentation Layer
+	Business Logic layer
+	Database Layer 
+ 	Presentation Layer In this path there are many programming languages:
+	HTML
+	CSS
+	JavaScript
+	Design Framework
+	Pugjs
+	SASS
+	JavaScript Framework
+	jQuery
+	Gulpjs
+	JSON
+	AJAX
+	Jest
+ 	Business Logic Layer In this path there are many programming languages:
+	PHP language with( YII, Laravel, Symphony )
+	Python language with (Django, Flask, Web) 
+	Java language with (Spring) 
+	Ruby language with (ROR) 
+	C# language with (NET)
+	environment Nodejs with(Express)
+ 	Database layer. There are many databases that you can work On it like:
+	MySQL
+	SQLServer
+	Oracle
+	Some techniques to learn
+	Git And Github
+	GraphQL
+	Rest API
+	Linux
+	Command Line
+ 	Learn the basic skills of the Front-End section:
+	Learn HTML language
+	What is HTML
+	What is CSS
+	CSS Saves a Lot of Work
+	JavaScript language learning
+	Frameworks andUI Kits
+	Pugjs
+	Learn the basics of Pug.js cours
+	Official website of Pugjs
+	Learn Gulpjs to do your repetitive tasks for you
+	Learn JavaScript Unit Testing by Jest Framework
+	What is Vue.js
+	Learn Vue.js Basics course
+ 	Learn the basic skills of the Back-End part:
+	What is PHP
+	What is a PHP File?
+	Learn MySQL to work with databases
+	What is MySQL?
+	Git And Github
+	What is Git?
+	What does Git do?
+	Why Git?
+	What is GitHub?
+	What is React?
+	How does React Work?
+	tailwind CSS
+	npm
+	What is PostgreSQL?
+	Redis?
+	JWT?
+	REST?
+	Linux / Unix
+	Basic AWS Services
+	Monit?
+	Some of the key features of Monit are:
+o	Automatic Recovery
+o	Alert Notifications
+o	Event Logging
+o	Resource Limit Monitoring
+o	Flexible Configuration
+o	Web Interface
+	Ansible
+	Terraform
+	Checkpoint
+    </string>
+	<string name="FlutterContent">
+1-Basic of dart:
+•	Function
+•	Operators
+•	Control flow statement
+•	Variables
+2-set up development environment:
+•	Flutter CLI
+•	Vs code
+•	Android studio
+•	IDEs
+•	FVM
+3-Widgets:
+•	Stateless
+•	Stay led
+•	Material
+•	Cupertino
+4-Working with Assets:
+•	Fonts
+•	Images
+•	Other file types
+5-version control systems:
+•	GIT
+6-Repohosting services:
+•	GIT Hub
+7-Design principles:
+•	Design patterns
+•	OOP
+•	Dependency Injection
+8-Package manager:
+•	Pub .dev
+•	Flutter pub/dart pub
+9-Storage:
+•	SQL Lite
+•	Shared preferences
+•	Fire base/fire store
+10-Working with APIS:
+•	JSON serialize/Dese ria I z e
+•	Web SOKETS
+•	Graph QL
+•	RESTFUL APIS
+11-Advanced Dart:
+•	Core libraries
+•	Lists
+•	Lambdas
+•	Functional programing
+•	Streams/function
+12-state management:
+•	River pod
+•	Bloc
+•	Provider
+13-Reactive programming:
+•	RX Dart
+14-Animations:
+•	Curved
+•	Animation controller
+•	Hero/opacity
+•	Animated Builder
+•	Animated widget
+15-Testing:
+•	Unit testing
+•	Widget testing
+•	TDD/BDD
+•	Integration testing
+16-CI/CD:
+•	Fast lane
+•	Code magic
+•	BITRISE
+•	GIT Hub Action
+17-Devtools:
+•	Flutter inspector
+•	Flutter outline
+•	Memory all OCATION
+18-Flutter internals:
+•	Render objects
+•	3 trees
+•	Immutability
+19-Analytics:
+•	Fire base Analytics
+•	Google Analytics
+•	SAGMENT
+•	Mix PANAL
+20-Deployment:
+•	App store
+•	Guide lines and protocols
+•	Play store
+
+    </string>
+	<string name="AiAndDataScience">
+1-Mathematics:
+•	Learn Algebra
+•	Calculus
+•	Mathematical Analysis
+•	Differential Calculus
+2-Statistics:
+•	Statistics, CLT
+•	Hypothesis Testing
+•	Probability and Sampling
+•	AB Testing
+•	Increasing Test Sensitivity
+•	Ratio Metrics
+3-Econometrics:
+•	Econometrics Pre-requisites
+•	Regressions
+•	Time series
+•	Fitting Distributions
+4-Coding:
+•	Python
+•	Data Structures and Algorithms
+•	SQL
+
+5-Machine learning:
+•	Classic/Advanced ML
+6-Deep Learning:
+•	Fully Connected NN
+•	CNN
+•	RNN
+•	LSTM
+•	Transformers
+•	Transfer Learning
+7-MlOps
+•	Deployment models
+•	CI/CD
+</string>
+	<string name="UI.UXContent">
+		Understanding Human Decision Making:(Buzzwords to Lookout for)
+          *Nudge Theory
+          *Persuasive Technology
+          *Behavior Design
+          *Behavioral Science
+          *Behavioral Economics
+(Framworks)
+         *BJ Fogg’s Behavior Model
+          *Stephen Wendell’s CREATE Action Funnel
+        *Spectrum of Thinking Interventions
+        *Dual Process Theory
+
+Behavior Change Strategies:
+(Classifying Behavior)
+            *BJ Fogg’s Behavior Grid
+(Making Users Addicted)
+           *Nir Eyal’s Hook Model
+           *Cue Routine Reward Model
+(Changing Users behavior)
+
+Support Conscious Action:
+           *Help User think about Their Action
+           *Educate and Encourage User
+            *Make it Incidental
+            *Automate the Act of Repetition
+
+Cheating:
+          *Defaulting
+Make or Change Habbits:
+(New Behavior)
+          *Help User Avoiding the Cue
+          *Replace the Routine
+          *Use Consciousness to Interfere
+         *Mindfulness to Avoid Acting on the Cue
+         *Crowd Out Old Habit with New Behavior
+
+Understanding the Product:
+(Clarify Product)
+          *Target Outcome
+          *Target Actor
+          *Target Action
+(Define Target Users)
+            *Create User Personas
+(Business Model)
+            *Business Model Canvas
+            *Lean Canvas
+(New Business Model)
+           *Business Model Inspirator
+           *Competitor Analysis
+           *Five Forces Model
+           *SWOT Analysis
+Conceptual Design:
+(Create Product Backlog)
+          *User Storie
+
+(Things to Lookout for)
+  *In general, Keep it Short and Simple
+ *Make it Easy to Understand, Easy to Complete
+ *Make Progress Visible to User
+*Make Progress Meaningful in order to Reward User
+  *Make Successful Completion Clearly Visible
+(Deliverables)
+*Customer Experience Map by Mel Edwards
+*Simple Flowchart
+*Event-Driven Process Chain Model (EPC)
+*Business Process Model and Notation (BPMN)
+
+ProtoTyping:
+*Good Layout Rules
+(Wireframing)
+*Figma
+*Adobe XD
+*Sketch
+*Balsamiq
+(Ux Patterns)
+(When Attention is Fleeting and Scarce)
+*Call to Action
+*Status Reports
+*How-to-Tips
+*Simple Reminders and Planning Prompts
+(When you have many opportunities to Influence User)
+*Decision-Making Support
+*Behavior Change Games
+*Planners
+*Gamification
+*Social Sharing
+*Reminders
+*Tutorials
+*Goal Trackers
+UX Best Practices:
+(Getting Users Attention)
+*Tell User What the Action is and Ask for it
+*Make it Clear, Where to Act
+*Clear the Page of Distractions
+(Get a Favorable Conscious Evaluation)
+*Prime User-Relevant Associations
+*Leverage Loss Aversion
+*Use Peer Comparisons
+*Use Competition
+*Avoid Cognitive Overhead
+*Avoid Choice Overload
+*Avoid Direct Payments
+(Creating Urgency to Act Now)
+*Frame Text to Avoid Temporal Myopia
+*Remind of Prior Commitment to Act
+*Make Commitment to Friends
+*Make Reward Scarce
+(Getting Positive Intuitive Reaction)
+               *Make UI Professional and Beautiful
+               *Deploy Social Proof
+               *Deploy Strong Authority on Subject
+               *Be Authentic and Personal
+(Make sure Users can Easily do it)
+              *Elicit Implementation Intentions
+              *Default Everything
+              *Lessen the Burden of Action/Info.
+              *Deploy Peer Comparisons
+
+Measuring the Impact:
+(Testing)
+           *Incremental A/B Testing
+           *Multivariate Testing
+               -Gather Lessons Learned
+
+	</string>
 </resources>

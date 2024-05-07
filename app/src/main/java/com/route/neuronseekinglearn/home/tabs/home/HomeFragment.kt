@@ -23,6 +23,7 @@ class HomeFragment : Fragment() {
         viewBinding = FragmentHomeBinding.inflate(layoutInflater)
 
         return viewBinding.root
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -30,6 +31,7 @@ class HomeFragment : Fragment() {
         viewModel = ViewModelProvider(this)[HomeViewModel::class.java]
 
         initViews()
+
     }
 
     private fun initViews() {
@@ -75,4 +77,5 @@ class HomeFragment : Fragment() {
 
 
 }
+
 

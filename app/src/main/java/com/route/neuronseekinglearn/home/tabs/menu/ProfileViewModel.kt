@@ -6,4 +6,5 @@ import androidx.lifecycle.ViewModel
 class ProfileViewModel : ViewModel() {
     val username = MutableLiveData<String>()
     val email = MutableLiveData<String>()
+
 }

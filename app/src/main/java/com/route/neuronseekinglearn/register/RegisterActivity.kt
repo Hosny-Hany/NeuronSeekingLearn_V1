@@ -72,7 +72,6 @@ class RegisterActivity : AppCompatActivity() {
         editor.putString("User_Name", UserName)
         editor.putString("User_Email", UserEmail)
         editor.commit()
-
         val intent = Intent(this, HomeActivity::class.java)
         startActivity(intent)
         finish()

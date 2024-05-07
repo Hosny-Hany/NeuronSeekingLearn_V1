@@ -20,17 +20,18 @@ class ProfileFragment : Fragment() {
         viewBinding = FragmentProfileBinding.inflate(layoutInflater)
 
         return viewBinding.root
+        
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this)[ProfileViewModel::class.java]
-
         initViews()
     }
 
     private fun initViews() {
         viewBinding.viewModel = viewModel
         viewBinding.lifecycleOwner = this
+
     }
 }
