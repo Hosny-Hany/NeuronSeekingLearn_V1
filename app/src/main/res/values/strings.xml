@@ -1,88 +1,90 @@
 <resources>
-	<string name="app_name">Neuron Seeking Learn</string>
-	<color name="buttom">#FF453A</color>
-	<string name="open_string">Open</string>
-	<string name="close_string">Close</string>
-	<string name="road_maps">Road Maps</string>
-	<string name="chat_to_choose_my_track">Chat to choose my track</string>
-	<string name="search_about_a_question">Search about a question</string>
-	<!-- TODO: Remove or change this placeholder text -->
-	<string name="hello_blank_fragment">Hello blank fragment</string>
-	<string name="home">Home</string>
-	<string name="sign_in">Sign In</string>
+    <string name="app_name">Neuron Seeking Learn</string>
+    <color name="buttom">#FF453A</color>
+    <string name="open_string">Open</string>
+    <string name="close_string">Close</string>
+    <string name="road_maps">Road Maps</string>
+    <string name="chat_to_choose_my_track">Chat to choose my track</string>
+    <string name="search_about_a_question">Search about a question</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="sign_in">Sign In</string>
 
-	<string name="androidContent">
-    "Part 1 ( Java SE)
-1. Introduction to Java Programming
-• Overview.
-• Compiler and JVM
-• Project Structure
-• Hello World Application
-• Variables and Data types
-• Operators
-• Conditional statements ( IF - Switch)
-• Loops ( For - While - Do While)
-2. Basics
-• nested loops
-• Strings
-• Arrays
-• functions
-3. Object Oriented Programming/n
-• Classes and Objects
-• Encapsulation and data hiding
-• Inheritance
-• Polymorphism
-• Abstraction (Abstract classes - Interfaces)
-4. Collections and Generics
-• Sets, Lists
-• Threading
-• Generics Class and MethodPart 2 (Android Development)
-1. Introduction to Android
-• Android OS
-• Android Versions
-• OS Architecture
-• Application Component
-• Android Studio and Gradle
-• Creating Hello World
-2. UI Components
-• Layouts(Constraints Layout- Linear Layout )
-• Using resources ( drawables, Strings colors, and Styles )
-3. UI Components II
-• Menu
-• Support Localization
-• Support Orientation
-4. Intents and Activities
-• Intents
-• Intent Filters
-5. Fragments
-• what is fragments
-• Fragment manager and transaction
-• tablayout, NavigationDrawer, BottomNavigation
-6. Dialogs• Alert Dialog
-• Display dialog with items
-• Custom dialogs (Dialog Fragment)
-7. Data Storage
-• Shared Preference
-• Room (Database Library) - from google Arch Components
-8. Threading and Services
-• Threading
-• Service and Intent Service
-9. Web services and APIs
-• what is JSON ?
-• how to make network calls and APIs
-• Consuming Web APIs
-• Using Retrofit and Gson Libraries
-• how to cache Apis
-• using Room and Retrofit Together
-• what is Repository Pattern?
-10. FireBase RealTime Database
-• how to deal with Realtime Database
-11. Notifications
-• Simple Notification
-• firebase to push Notifications
-• one signal push notifications SDK
+    <string name="androidContent">
+     <center><h1> "Part 1 ( Java SE)"</h1></center>
+1.Introduction to Java Programming:\n
+• Overview.\n
+• Compiler and JVM\n
+• Project Structure\n
+• Hello World Application\n
+• Variables and Data types\n
+• Operators\n
+• Conditional statements ( IF - Switch)\n
+• Loops ( For - While - Do While)\n
+2. Basics:\n
+• nested loops\n
+• Strings\n
+• Arrays\n
+• functions\n
+3. Object Oriented Programming:\n
+• Classes and Objects\n
+• Encapsulation and data hiding\n
+• Inheritance\n
+• Polymorphism\n
+• Abstraction (Abstract classes - Interfaces)\n
+4. Collections and Generics:\n
+• Sets, Lists\n
+• Threading\n
+• Generics Class and MethodPart 2 (Android Development)\n
+1. Introduction to Android:\n
+• Android OS\n
+• Android Versions\n
+• OS Architecture\n
+• Application Component\n
+• Android Studio and Gradle\n
+• Creating Hello World\n
+2. UI Components:\n
+• Layouts(Constraints Layout- Linear Layout )\n
+• Using resources ( drawables, Strings colors, and Styles )\n
+3. UI Components II:\n
+• Menu\n
+• Support Localization\n
+• Support Orientation\n
+4. Intents and Activities:\n
+• Intents\n
+• Intent Filters\n
+5. Fragments:\n
+• what is fragments\n
+• Fragment manager and transaction\n
+• tablayout, NavigationDrawer, BottomNavigation\n
+6. Dialogs :\n
+•Alert Dialog\n
+• Display dialog with items\n
+• Custom dialogs (Dialog Fragment)\n
+7. Data Storage :\n
+• Shared Preference\n
+• Room (Database Library) \n
+        - from google Arch Components\n
+8. Threading and Services:\n
+• Threading\n
+• Service and Intent Service\n
+9. Web services and APIs\n
+• what is JSON ?\n
+• how to make network calls and APIs\n
+• Consuming Web APIs\n
+• Using Retrofit and Gson Libraries\n
+• how to cache Apis\n
+• using Room and Retrofit Together\n
+• what is Repository Pattern?\n
+10. FireBase RealTime Database :\n
+• how to deal with Realtime Database\n
+11. Notifications : \n
+• Simple Notification\n
+• firebase to push Notifications\n
+• one signal push notifications SDK\n
     </string>
-	<string name="BackEndContent">
+    <string name="BackEndContent">
         Backend development involves several key components:	
 •	Server
 •	Database 
@@ -167,7 +169,7 @@
  	MS SQL
  	oracle
     </string>
-	<string name="FullStackContent">
+    <string name="FullStackContent">
         Before entering into the definition of the Full- Stack Developer Job
         let us see the most important jobs present in any project:
 	UI/UX Designer
@@ -258,7 +260,7 @@ o	Web Interface
 	Terraform
 	Checkpoint
     </string>
-	<string name="FlutterContent">
+    <string name="FlutterContent">
 1-Basic of dart:
 •	Function
 •	Operators
@@ -346,7 +348,7 @@ o	Web Interface
 •	Play store
 
     </string>
-	<string name="AiAndDataScience">
+    <string name="AiAndDataScience">
 1-Mathematics:
 •	Learn Algebra
 •	Calculus
@@ -382,7 +384,7 @@ o	Web Interface
 •	Deployment models
 •	CI/CD
 </string>
-	<string name="UI.UXContent">
+    <string name="UI.UXContent">
 		Understanding Human Decision Making:(Buzzwords to Lookout for)
           *Nudge Theory
           *Persuasive Technology
@@ -508,4 +510,103 @@ Measuring the Impact:
                -Gather Lessons Learned
 
 	</string>
+    <string name="FrontContent">
+-Internet
+How does the internet work?
+What is HTTP?
+What is Domain Name?
+What is hosting?
+DNS and how it works?
+Browsers ond how they work?
+-HTML
+Learn the basics
+Writing Semantic HTML
+Forms and Validations
+Accessibility
+SEO Basics
+-CSS
+Learn the basics
+Making Layouts
+Responsive Design
+-JavaScript
+Learn the Basics
+Learn DOM Manipulation
+Fetch API/Ajax (XHR)
+
+
+-VCS Hosting
+GitHub
+GitLab
+Bitbucket
+-Version Control Systems
+Git
+-Package Managers
+Npm
+Pnpm
+Yarn
+-Pick a Framework
+Angular
+Vuejs
+React
+Svelte
+Solid JS
+Qwik
+-Writing CSS
+Tailwind
+Radix Ul
+Shadcn UI
+-CSS Architecture
+BEM
+
+-CSS Preprocessors
+Sass
+PostCSS
+-Build Tools
+Module Bundlers
+*vite
+*esbuild
+*webpack
+*rollup
+*parcel
+Task Runners
+*npm scripts
+Linters and Formatters
+*prettier
+*ESlint
+-Testing your Apps
+Vitest
+Jest
+Playright
+Cypress
+-Authentication Strategies JWT, CAuth, SSC, Basic Auth, Session Auth etc
+-Web Security Basics
+HTML Templates
+Custom Elements
+Shadow DOM
+-Type Checkers
+TypeScript
+-Server Side Rendering (SSR)
+Angular
+* Universal
+Vuejs
+* Nuxtjs
+React
+* Nextjs
+* Remix
+Svelte
+* Svelte Kit
+- GraphQL
+Apollo
+Relay Modern
+- Static Site Generators
+Vuepress
+Astro
+Jekyll
+Elevent
+Hugo
+Next.js
+Nuxt.js
+Remix
+
+    </string>
 </resources>

@@ -7,10 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
+import com.route.neuronseekinglearn.R
 import com.route.neuronseekinglearn.databinding.FragmentChatBinding
+import com.route.neuronseekinglearn.home.tabs.home.HomeFragment
 import okhttp3.Call
 import okhttp3.Callback
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -27,6 +30,7 @@ class ChatBoatFragment : Fragment() {
     private lateinit var sendInput: Button
     private lateinit var chatTextView: RecyclerView
     private lateinit var chatAdapter: ChatAdapter
+    private lateinit var chatback: ImageView
     private val messageList: MutableList<Message> = mutableListOf()
     private val client: OkHttpClient = OkHttpClient()
 
@@ -38,6 +42,8 @@ class ChatBoatFragment : Fragment() {
         textInput = viewBinding.contentChat.textInput
         sendInput = viewBinding.contentChat.sendInput
         chatTextView = viewBinding.contentChat.RecyclerView
+        chatback = viewBinding.ImageBack
+
 
         chatAdapter = ChatAdapter(messageList)
         chatTextView.adapter = chatAdapter
@@ -53,7 +59,16 @@ class ChatBoatFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewBinding.lifecycleOwner = this
+
+        chatback.setOnClickListener {
+            activity?.supportFragmentManager
+                ?.beginTransaction()
+                ?.replace(R.id.fragment_container, HomeFragment())
+                ?.addToBackStack(null)
+                ?.commit()
+        }
     }
+
 
     private fun sendMessageToFlask(message: String) {
         // Add user message to the chat interface

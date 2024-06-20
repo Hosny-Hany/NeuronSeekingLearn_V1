@@ -87,7 +87,6 @@
                     android:layout_height="80dp"
                     android:layout_marginTop="15dp"
                     android:backgroundTint="@color/primaryColor"
-                    android:onClick="@{()->vm.navigateToFullStack()}"
                     android:text="Full Stack"
                     android:textColor="@color/Secondarycolor"
                     android:textSize="25dp" />
