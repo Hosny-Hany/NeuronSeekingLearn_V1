@@ -65,6 +65,7 @@ class RoadMapFragment : Fragment() {
         initRecyclerview()
         subscribeToLiveData()
 
+
     }
 
     private lateinit var adapter: RoadMapRecyclerAdapter

@@ -2,6 +2,12 @@ package com.route.neuronseekinglearn
 
 object Constant {
 
-    const val RoadMap_INDEX = "Index"
-    const val RoadMap_NAME = "name"
+    const val IS_LOGIN = "is login"
+    const val USER_NAME = "user name "
+    const val USER_EMAIL = "user email "
+    const val USER_ID = "user id "
+
+
+
+
 }

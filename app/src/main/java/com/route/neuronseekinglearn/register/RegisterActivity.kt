@@ -32,6 +32,7 @@ class RegisterActivity : AppCompatActivity() {
             )
         }
         viewModel.events.observe(this, ::handleEvents)
+
     }
 
     private fun handleEvents(registerEvent: RegisterEvent?) {
@@ -64,14 +65,8 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun navigateToHome() {
-        var sharedPreferences = getSharedPreferences("User Data", Context.MODE_PRIVATE)
-        Toast.makeText(this, "data saved successfully", Toast.LENGTH_SHORT).show()
-        var editor = sharedPreferences.edit()
-        var UserName = viewModel.username.value.toString()
-        var UserEmail = viewModel.email.value.toString()
-        editor.putString("User_Name", UserName)
-        editor.putString("User_Email", UserEmail)
-        editor.commit()
+        Toast.makeText(this, "Register successfully", Toast.LENGTH_SHORT).show()
+
         val intent = Intent(this, HomeActivity::class.java)
         startActivity(intent)
         finish()

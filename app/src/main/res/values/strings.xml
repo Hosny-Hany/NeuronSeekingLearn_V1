@@ -1,4 +1,8 @@
 <resources>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
     <string name="app_name">Neuron Seeking Learn</string>
     <color name="buttom">#FF453A</color>
     <string name="open_string">Open</string>

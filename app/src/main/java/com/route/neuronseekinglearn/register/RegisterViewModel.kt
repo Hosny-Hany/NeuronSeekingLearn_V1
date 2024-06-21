@@ -1,5 +1,6 @@
 package com.route.neuronseekinglearn.register
 
+import android.content.Context
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.ktx.auth
@@ -10,7 +11,9 @@ import com.route.neuronseekinglearn.message
 import com.route.neuronseekinglearn.model.User
 import com.route.neuronseekinglearn.sessionProvider
 
-class RegisterViewModel : ViewModel() {
+class RegisterViewModel( ): ViewModel() {
+
+
     val MessageLiveData = SingleLiveEvent<message>()
     val isLoading = MutableLiveData<Boolean>()
     val events = SingleLiveEvent<RegisterEvent>()
@@ -37,7 +40,7 @@ class RegisterViewModel : ViewModel() {
             .addOnCompleteListener { Task ->
                 isLoading.value = false
                 if (Task.isSuccessful) {
-                    insertUsertoFirebase(Task.result.user?.uid)
+                    insertUserToFirebase(Task.result.user?.uid)
                     navigateToHome()
                 } else {
                     //showError
@@ -56,24 +59,23 @@ class RegisterViewModel : ViewModel() {
         )
     }
 
-    private fun insertUsertoFirebase(uid: String?) {
+    private fun insertUserToFirebase(uid: String?) {
         val user = User(
             id = uid,
             userName = username.value,
             email = email.value
         )
-        UsersDao.createUser(user) { Task ->
-            if (Task.isSuccessful) {
+        UsersDao.createUser(user) { task ->
+            if (task.isSuccessful) {
                 isLoading.value = false
+
+                sessionProvider.user = user
                 MessageLiveData.postValue(
                     message(
-                        message = "User Registed Succesfull",
+                        message = "User Registered Successfully",
                         posActionName = "ok",
                         OnPosAction = {
-                            sessionProvider.user = user
                             events.postValue(RegisterEvent.NavigateToHome)
-                            //Save user Id
-                            // Navegat To Home
                         }
                     )
                 )
@@ -81,13 +83,11 @@ class RegisterViewModel : ViewModel() {
             } else {
                 MessageLiveData.postValue(
                     message(
-                        message = Task.exception?.localizedMessage
+                        message = task.exception?.localizedMessage
                     )
                 )
-
             }
         }
-
     }
 
     private fun ValidForm(): Boolean {
@@ -99,19 +99,19 @@ class RegisterViewModel : ViewModel() {
             usernameError.postValue(null)
         }
         if (email.value.isNullOrBlank()) {
-            emailError.postValue("EmailNotValid")
+            emailError.postValue("Email Not Valid")
             isValid = false
         } else {
             emailError.postValue(null)
         }
         if (password.value.isNullOrBlank()) {
-            passwordError.postValue("PasswordNotValid")
+            passwordError.postValue("Password Not Valid")
             isValid = false
         } else {
             passwordError.postValue(null)
         }
         if (passwordconfirm.value != password.value) {
-            passwordconfirmError.postValue("PasswordconfNotValid")
+            passwordconfirmError.postValue("Password confirm Not Valid")
             isValid = false
         } else {
             passwordconfirmError.postValue(null)
