@@ -50,17 +50,16 @@
                 style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:hint="Hosny Hammad"
                 android:textColorHint="@color/primaryColor"
                 app:boxCornerRadiusBottomEnd="10dp"
-                app:boxCornerRadiusTopStart="10dp"
-                app:boxStrokeColor="@color/Secondarycolor">
+                app:boxCornerRadiusTopStart="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:drawableRight="@drawable/baselineedit_24"
-                    android:inputType="textPersonName"
-                    android:text="@={viewModel.username}" />
+                    android:inputType="textPersonName" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -83,11 +82,10 @@
                 android:id="@+id/Email"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="hosny...@gmail.com"
+                android:hint="hosnihany643@gmail.com"
                 android:textColorHint="@color/primaryColor"
                 app:boxCornerRadiusBottomEnd="10dp"
-                app:boxCornerRadiusTopStart="10dp"
-                app:boxStrokeColor="@color/primaryColor">
+                app:boxCornerRadiusTopStart="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"

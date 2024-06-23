@@ -113,8 +113,7 @@
                     android:layout_height="wrap_content"
                     android:hint="Password Confirmation"
                     android:inputType="textPassword"
-                    android:text="@={vm.passwordconfirm}"
-                    android:textColorHint="@color/primaryColor" />
+                    android:text="@={vm.passwordconfirm}" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout

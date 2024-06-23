@@ -17,7 +17,7 @@
 
     <string name="androidContent">
      <center><h1> "Part 1 ( Java SE)"</h1></center>
-1.Introduction to Java Programming:\n
+1.Introduction to Java Programming:/n
 • Overview.\n
 • Compiler and JVM\n
 • Project Structure\n
@@ -89,528 +89,555 @@
 • one signal push notifications SDK\n
     </string>
     <string name="BackEndContent">
-        Backend development involves several key components:	
-•	Server
-•	Database 
-•	Business Logic
-•	APIs (Application Programming Interfaces)
-•	Security
-•	Performance Optimization
- 	Backend development can be done using various programming languages and frameworks, such as:
-•	Java/Spring
-•	Python/Django or Flask
-•	Node.js/Express
-•	Ruby on Rails
-•	PHP/Laravel
-•	ASP.NET Core
+        Backend development involves several key components:\n
+•	Server\n
+•	Database\n
+•	Business Logic\n
+•	APIs (Application Programming Interfaces)\n
+•	Security\n
+•	Performance Optimization\n
+ 	Backend development can be done using various programming languages and frameworks, such as:\n
+•	Java/Spring\n
+•	Python/Django or Flask\n
+•	Node.js/Express\n
+•	Ruby on Rails\n
+•	PHP/Laravel\n
+•	ASP.NET Core\n
 
- 	components of the internet include:
-•	World Wide Web (WWW)
-•	IP Addresses
-•	Protocols
-•	Web Browsers
-•	Search Engines
-•	Email
-•	Social Media
+ 	components of the internet include:\n
+•	World Wide Web (WWW)\n
+•	IP Addresses\n
+•	Protocols\n
+•	Web Browsers\n
+•	Search Engines\n
+•	Email\n
+•	Social Media\n
 
- 	How the internet work?
- 	What is http?
- 	 What is Brwosers ?
- 	How the brwosers work?
-•	User Interface
-•	Rendering Engine
-•	Networking
-•	Cache
-•	Cookies and Storage
-•	Security
-•	Extensions and Plugins
- 	Dns and how it work?
- 	What is the domain name?
- 	brief overview the hosting
-•	Server Space
-•	Server Management
-•	Internet Connectivity
-•	Types of Hosting
-•	Domain Integration
- 	brief overview of the process learn a language:
-•	Choose a Language
-•	Study Resources
-•	Explore Frameworks
-•	Hands-On Practice
-•	Collaborate and Seek Feedback
-•	Build Real-World Projects
-•	Stay updated
+ 	How the internet work?\n
+ 	What is http?\n
+ 	 What is Brwosers ?\n
+ 	How the brwosers work?\n
+•	User Interface\n
+•	Rendering Engine\n
+•	Networking\n
+•	Cache\n
+•	Cookies and Storage\n
+•	Security\n
+•	Extensions and Plugins\n
+ 	Dns and how it work?\n
+ 	What is the domain name?\n
+ 	brief overview the hosting\n
+•	Server Space\n
+•	Server Management\n
+•	Internet Connectivity\n
+•	Types of Hosting\n
+•	Domain Integration\n
+ 	brief overview of the process learn a language:\n
+•	Choose a Language\n
+•	Study Resources\n
+•	Explore Frameworks\n
+•	Hands-On Practice\n
+•	Collaborate and Seek Feedback\n
+•	Build Real-World Projects\n
+•	Stay updated\n
 
- 	What is Java? 
- 	What is Java script ?
- 	What is Rupy?
- 	What is C# 
- 	What is GO?
- 	What is PHP?
- 	What is Python?
- 	Whay is Rust?
+ 	What is Java? \n
+ 	What is Java script?\n
+ 	What is Rupy?\n
+ 	What is C# \n
+ 	What is GO?\n
+ 	What is PHP?\n
+ 	What is Python?\n
+ 	Whay is Rust?\n
 
- 	What is Git?
- 	Repo Hosting Services:
-•	GitHub
-•	GitLab
-•	BitBucket
-•	How to choose the best source code repository
- 	What is the Relational Database?
-•	PostgreSQL 
- 	PostgreSQL supports the most important programming languages:
-•	Python
-•	Java
-•	C/C++
-•	C#
-•	Node.js
-•	Go
-•	Ruby
-•	Perl
-•	Tcl
- 	MySQL
- 	Maria DB
- 	MS SQL
- 	oracle
+ 	What is Git?\n
+ 	Repo Hosting Services:\n
+•	GitHub\n
+•	GitLab\n
+•	BitBucket\n
+•	How to choose the best source code repository\n
+ 	What is the Relational Database?\n
+•	PostgreSQL \n
+ 	PostgreSQL supports the most important programming languages:\n
+•	Python\n
+•	Java\n
+•	C/C++\n
+•	C#\n
+•	Node.js\n
+•	Go\n
+•	Ruby\n
+•	Perl\n
+•	Tcl\n
+ 	MySQL\n
+ 	Maria DB\n
+ 	MS SQL\n
+ 	oracle\n
     </string>
     <string name="FullStackContent">
-        Before entering into the definition of the Full- Stack Developer Job
-        let us see the most important jobs present in any project:
-	UI/UX Designer
-	Front-End Developer
-	Back-End Developer
-	Testers  
-	Business Analyst
-	Dev Ops 
-	Sales And Marketing
-	Project Manager
- 	project devide into the group of layer:
-	Presentation Layer
-	Business Logic layer
-	Database Layer 
- 	Presentation Layer In this path there are many programming languages:
-	HTML
-	CSS
-	JavaScript
-	Design Framework
-	Pugjs
-	SASS
-	JavaScript Framework
-	jQuery
-	Gulpjs
-	JSON
-	AJAX
-	Jest
- 	Business Logic Layer In this path there are many programming languages:
-	PHP language with( YII, Laravel, Symphony )
-	Python language with (Django, Flask, Web) 
-	Java language with (Spring) 
-	Ruby language with (ROR) 
-	C# language with (NET)
-	environment Nodejs with(Express)
- 	Database layer. There are many databases that you can work On it like:
-	MySQL
-	SQLServer
-	Oracle
-	Some techniques to learn
-	Git And Github
-	GraphQL
-	Rest API
-	Linux
-	Command Line
- 	Learn the basic skills of the Front-End section:
-	Learn HTML language
-	What is HTML
-	What is CSS
-	CSS Saves a Lot of Work
-	JavaScript language learning
-	Frameworks andUI Kits
-	Pugjs
-	Learn the basics of Pug.js cours
-	Official website of Pugjs
-	Learn Gulpjs to do your repetitive tasks for you
-	Learn JavaScript Unit Testing by Jest Framework
-	What is Vue.js
-	Learn Vue.js Basics course
- 	Learn the basic skills of the Back-End part:
-	What is PHP
-	What is a PHP File?
-	Learn MySQL to work with databases
-	What is MySQL?
-	Git And Github
-	What is Git?
-	What does Git do?
-	Why Git?
-	What is GitHub?
-	What is React?
-	How does React Work?
-	tailwind CSS
-	npm
-	What is PostgreSQL?
-	Redis?
-	JWT?
-	REST?
-	Linux / Unix
-	Basic AWS Services
-	Monit?
-	Some of the key features of Monit are:
-o	Automatic Recovery
-o	Alert Notifications
-o	Event Logging
-o	Resource Limit Monitoring
-o	Flexible Configuration
-o	Web Interface
-	Ansible
-	Terraform
-	Checkpoint
+        Before entering into the definition of the Full- Stack Developer Job\n
+        let us see the most important jobs present in any project:\n
+	UI/UX Designer\n
+	Front-End Developer\n
+	Back-End Developer\n
+	Testers\n
+	Business Analyst\n
+	Dev Ops \n
+	Sales And Marketing\n
+	Project Manager\n
+ 	project devide into the group of layer:\n
+	Presentation Layer\n
+	Business Logic layer\n
+	Database Layer \n
+ 	Presentation Layer In this path there are many programming languages:\n
+	HTML\n
+	CSS\n
+	JavaScript\n
+	Design Framework\n
+	Pugjs\n
+	SASS\n
+	JavaScript Framework\n
+	jQuery\n
+	Gulpjs\n
+	JSON\n
+	AJAX\n
+	Jest\n
+ 	Business Logic Layer In this path there are many programming languages:\n
+	PHP language with( YII, Laravel, Symphony )\n
+	Python language with (Django, Flask, Web) \n
+	Java language with (Spring) \n
+	Ruby language with (ROR) \n
+	C# language with (NET)\n
+	environment Nodejs with(Express)\n
+ 	Database layer. There are many databases that you can work On it like:\n
+	MySQL\n
+	SQLServer\n
+	Oracle\n
+	Some techniques to learn\n
+	Git And Github\n
+	GraphQL\n
+	Rest API\n
+	Linux\n
+	Command Line\n
+ 	Learn the basic skills of the Front-End section:\n
+	Learn HTML language\n
+	What is HTML\n
+	What is CSS\n
+	CSS Saves a Lot of Work\n
+	JavaScript language learning\n
+	Frameworks andUI Kits\n
+	Pugjs\n
+	Learn the basics of Pug.js cours\n
+	Official website of Pugjs\n
+	Learn Gulpjs to do your repetitive tasks for you\n
+	Learn JavaScript Unit Testing by Jest Framework\n
+	What is Vue.js\n
+	Learn Vue.js Basics course\n
+ 	Learn the basic skills of the Back-End part:\n
+	What is PHP\n
+	What is a PHP File?\n
+	Learn MySQL to work with databases\n
+	What is MySQL?\n
+	Git And Github\n
+	What is Git?\n
+	What does Git do?\n
+	Why Git?\n
+	What is GitHub?\n
+	What is React?\n
+	How does React Work?\n
+	tailwind CSS\n
+	npm\n
+	What is PostgreSQL?\n
+	Redis?\n
+	JWT?\n
+	REST?\n
+	Linux / Unix\n
+	Basic AWS Services\n
+	Monit?\n
+	Some of the key features of Monit are:\n
+o	Automatic Recovery\n
+o	Alert Notifications\n
+o	Event Logging\n
+o	Resource Limit Monitoring\n
+o	Flexible Configuration\n
+o	Web Interface\n
+	Ansible\n
+	Terraform\n
+	Checkpoint\n
     </string>
     <string name="FlutterContent">
-1-Basic of dart:
-•	Function
-•	Operators
-•	Control flow statement
-•	Variables
-2-set up development environment:
-•	Flutter CLI
-•	Vs code
-•	Android studio
-•	IDEs
-•	FVM
-3-Widgets:
-•	Stateless
-•	Stay led
-•	Material
-•	Cupertino
-4-Working with Assets:
-•	Fonts
-•	Images
-•	Other file types
-5-version control systems:
-•	GIT
-6-Repohosting services:
-•	GIT Hub
-7-Design principles:
-•	Design patterns
-•	OOP
-•	Dependency Injection
-8-Package manager:
-•	Pub .dev
-•	Flutter pub/dart pub
-9-Storage:
-•	SQL Lite
-•	Shared preferences
-•	Fire base/fire store
-10-Working with APIS:
-•	JSON serialize/Dese ria I z e
-•	Web SOKETS
-•	Graph QL
-•	RESTFUL APIS
-11-Advanced Dart:
-•	Core libraries
-•	Lists
-•	Lambdas
-•	Functional programing
-•	Streams/function
-12-state management:
-•	River pod
-•	Bloc
-•	Provider
-13-Reactive programming:
-•	RX Dart
-14-Animations:
-•	Curved
-•	Animation controller
-•	Hero/opacity
-•	Animated Builder
-•	Animated widget
-15-Testing:
-•	Unit testing
-•	Widget testing
-•	TDD/BDD
-•	Integration testing
-16-CI/CD:
-•	Fast lane
-•	Code magic
-•	BITRISE
-•	GIT Hub Action
-17-Devtools:
-•	Flutter inspector
-•	Flutter outline
-•	Memory all OCATION
-18-Flutter internals:
-•	Render objects
-•	3 trees
-•	Immutability
-19-Analytics:
-•	Fire base Analytics
-•	Google Analytics
-•	SAGMENT
-•	Mix PANAL
-20-Deployment:
-•	App store
-•	Guide lines and protocols
-•	Play store
+1-Basic of dart:\n
+•	Function\n
+•	Operators\n
+•	Control flow statement\n
+•	Variables\n
+2-set up development environment:\n
+•	Flutter CLI\n
+•	Vs code\n
+•	Android studio\n
+•	IDEs\n
+•	FVM\n
+3-Widgets:\n
+•	Stateless\n
+•	Stay led\n
+•	Material\n
+•	Cupertino\n
+4-Working with Assets:\n
+•	Fonts\n
+•	Images\n
+•	Other file types\n
+5-version control systems:\n
+•	GIT\n
+6-Repohosting services:\n
+•	GIT Hub\n
+7-Design principles:\n
+•	Design patterns\n
+•	OOP\n
+•	Dependency Injection\n
+8-Package manager:\n
+•	Pub .dev\n
+•	Flutter pub/dart pub\n
+9-Storage:\n
+•	SQL Lite\n
+•	Shared preferences\n
+•	Fire base/fire store\n
+10-Working with APIS:\n
+•	JSON serialize/Dese ria I z e\n
+•	Web SOKETS\n
+•	Graph QL\n
+•	RESTFUL APIS\n
+11-Advanced Dart:\n
+•	Core libraries\n
+•	Lists\n
+•	Lambdas\n
+•	Functional programing\n
+•	Streams/function\n
+12-state management:\n
+•	River pod\n
+•	Bloc\n
+•	Provider\n
+13-Reactive programming:\n
+•	RX Dart\n
+14-Animations:\n
+•	Curved\n
+•	Animation controller\n
+•	Hero/opacity\n
+•	Animated Builder\n
+•	Animated widget\n
+15-Testing:\n
+•	Unit testing\n
+•	Widget testing\n
+•	TDD/BDD\n
+•	Integration testing\n
+16-CI/CD:\n
+•	Fast lane\n
+•	Code magic\n
+•	BITRISE\n
+•	GIT Hub Action\n
+17-Devtools:\n
+•	Flutter inspector\n
+•	Flutter outline\n
+•	Memory all OCATION\n
+18-Flutter internals:\n
+•	Render objects\n
+•	3 trees\n
+•	Immutability\n
+19-Analytics:\n
+•	Fire base Analytics\n
+•	Google Analytics\n
+•	SAGMENT\n
+•	Mix PANAL\n
+20-Deployment:\n
+•	App store\n
+•	Guide lines and protocols\n
+•	Play store\n
 
     </string>
     <string name="AiAndDataScience">
-1-Mathematics:
-•	Learn Algebra
-•	Calculus
-•	Mathematical Analysis
-•	Differential Calculus
-2-Statistics:
-•	Statistics, CLT
-•	Hypothesis Testing
-•	Probability and Sampling
-•	AB Testing
-•	Increasing Test Sensitivity
-•	Ratio Metrics
-3-Econometrics:
-•	Econometrics Pre-requisites
-•	Regressions
-•	Time series
-•	Fitting Distributions
-4-Coding:
-•	Python
-•	Data Structures and Algorithms
-•	SQL
+1-Mathematics:\n
+•	Learn Algebra\n
+•	Calculus\n
+•	Mathematical Analysis\n
+•	Differential Calculus\n
+2-Statistics:\n
+•	Statistics, CLT\n
+•	Hypothesis Testing\n
+•	Probability and Sampling\n
+•	AB Testing\n
+•	Increasing Test Sensitivity\n
+•	Ratio Metrics\n
+3-Econometrics:\n
+•	Econometrics Pre-requisites\n
+•	Regressions\n
+•	Time series\n
+•	Fitting Distributions\n
+4-Coding:\n
+•	Python\n
+•	Data Structures and Algorithms\n
+•	SQL\n
 
-5-Machine learning:
-•	Classic/Advanced ML
-6-Deep Learning:
-•	Fully Connected NN
-•	CNN
-•	RNN
-•	LSTM
-•	Transformers
-•	Transfer Learning
-7-MlOps
-•	Deployment models
-•	CI/CD
+5-Machine learning:\n
+•	Classic/Advanced ML\n
+6-Deep Learning:\n
+•	Fully Connected NN\n
+•	CNN\n
+•	RNN\n
+•	LSTM\n
+•	Transformers\n
+•	Transfer Learning\n
+7-MlOps\n
+•	Deployment models\n
+•	CI/CD\n
 </string>
     <string name="UI.UXContent">
-		Understanding Human Decision Making:(Buzzwords to Lookout for)
-          *Nudge Theory
-          *Persuasive Technology
-          *Behavior Design
-          *Behavioral Science
-          *Behavioral Economics
-(Framworks)
-         *BJ Fogg’s Behavior Model
-          *Stephen Wendell’s CREATE Action Funnel
-        *Spectrum of Thinking Interventions
-        *Dual Process Theory
+		Understanding Human Decision Making:(Buzzwords to Lookout for)\n
+          *Nudge Theory\n
+          *Persuasive Technology\n
+          *Behavior Design\n
+          *Behavioral Science\n
+          *Behavioral Economics\n
+(Framworks)\n
+         *BJ Fogg’s Behavior Model\n
+          *Stephen Wendell’s CREATE Action Funnel\n
+        *Spectrum of Thinking Interventions\n
+        *Dual Process Theory\n
 
-Behavior Change Strategies:
-(Classifying Behavior)
-            *BJ Fogg’s Behavior Grid
-(Making Users Addicted)
-           *Nir Eyal’s Hook Model
-           *Cue Routine Reward Model
-(Changing Users behavior)
+Behavior Change Strategies:\n
+(Classifying Behavior)\n
+            *BJ Fogg’s Behavior Grid\n
+(Making Users Addicted)\n
+           *Nir Eyal’s Hook Model\n
+           *Cue Routine Reward Model\n
+(Changing Users behavior)\n
 
-Support Conscious Action:
-           *Help User think about Their Action
-           *Educate and Encourage User
-            *Make it Incidental
-            *Automate the Act of Repetition
+Support Conscious Action:\n
+           *Help User think about Their Action\n
+           *Educate and Encourage User\n
+            *Make it Incidental\n
+            *Automate the Act of Repetition\n
 
-Cheating:
-          *Defaulting
-Make or Change Habbits:
-(New Behavior)
-          *Help User Avoiding the Cue
-          *Replace the Routine
-          *Use Consciousness to Interfere
-         *Mindfulness to Avoid Acting on the Cue
-         *Crowd Out Old Habit with New Behavior
+Cheating:\n
+          *Defaulting\n
+Make or Change Habbits:\n
+(New Behavior)\n
+          *Help User Avoiding the Cue\n
+          *Replace the Routine\n
+          *Use Consciousness to Interfere\n
+         *Mindfulness to Avoid Acting on the Cue\n
+         *Crowd Out Old Habit with New Behavior\n
 
-Understanding the Product:
-(Clarify Product)
-          *Target Outcome
-          *Target Actor
-          *Target Action
-(Define Target Users)
-            *Create User Personas
-(Business Model)
-            *Business Model Canvas
-            *Lean Canvas
-(New Business Model)
-           *Business Model Inspirator
-           *Competitor Analysis
-           *Five Forces Model
-           *SWOT Analysis
-Conceptual Design:
-(Create Product Backlog)
-          *User Storie
+Understanding the Product:\n
+(Clarify Product)\n
+          *Target Outcome\n
+          *Target Actor\n
+          *Target Action\n
+(Define Target Users)\n
+            *Create User Personas\n
+(Business Model)\n
+            *Business Model Canvas\n
+            *Lean Canvas\n
+(New Business Model)\n
+           *Business Model Inspirator\n
+           *Competitor Analysis\n
+           *Five Forces Model\n
+           *SWOT Analysis\n
+Conceptual Design:\n
+(Create Product Backlog)\n
+          *User Storie\n
 
-(Things to Lookout for)
-  *In general, Keep it Short and Simple
- *Make it Easy to Understand, Easy to Complete
- *Make Progress Visible to User
-*Make Progress Meaningful in order to Reward User
-  *Make Successful Completion Clearly Visible
-(Deliverables)
-*Customer Experience Map by Mel Edwards
-*Simple Flowchart
-*Event-Driven Process Chain Model (EPC)
-*Business Process Model and Notation (BPMN)
+(Things to Lookout for)\n
+  *In general, Keep it Short and Simple\n
+ *Make it Easy to Understand, Easy to Complete\n
+ *Make Progress Visible to User\n
+*Make Progress Meaningful in order to Reward User\n
+  *Make Successful Completion Clearly Visible\n
+(Deliverables)\n
+*Customer Experience Map by Mel Edwards\n
+*Simple Flowchart\n
+*Event-Driven Process Chain Model (EPC)\n
+*Business Process Model and Notation (BPMN)\n
 
-ProtoTyping:
-*Good Layout Rules
-(Wireframing)
-*Figma
-*Adobe XD
-*Sketch
-*Balsamiq
-(Ux Patterns)
-(When Attention is Fleeting and Scarce)
-*Call to Action
-*Status Reports
-*How-to-Tips
-*Simple Reminders and Planning Prompts
-(When you have many opportunities to Influence User)
-*Decision-Making Support
-*Behavior Change Games
-*Planners
-*Gamification
-*Social Sharing
-*Reminders
-*Tutorials
-*Goal Trackers
-UX Best Practices:
-(Getting Users Attention)
-*Tell User What the Action is and Ask for it
-*Make it Clear, Where to Act
-*Clear the Page of Distractions
-(Get a Favorable Conscious Evaluation)
-*Prime User-Relevant Associations
-*Leverage Loss Aversion
-*Use Peer Comparisons
-*Use Competition
-*Avoid Cognitive Overhead
-*Avoid Choice Overload
-*Avoid Direct Payments
-(Creating Urgency to Act Now)
-*Frame Text to Avoid Temporal Myopia
-*Remind of Prior Commitment to Act
-*Make Commitment to Friends
-*Make Reward Scarce
-(Getting Positive Intuitive Reaction)
-               *Make UI Professional and Beautiful
-               *Deploy Social Proof
-               *Deploy Strong Authority on Subject
-               *Be Authentic and Personal
-(Make sure Users can Easily do it)
-              *Elicit Implementation Intentions
-              *Default Everything
-              *Lessen the Burden of Action/Info.
-              *Deploy Peer Comparisons
+ProtoTyping:\n
+*Good Layout Rules\n
+(Wireframing)\n
+*Figma\n
+*Adobe XD\n
+*Sketch\n
+*Balsamiq\n
+(Ux Patterns)\n
+(When Attention is Fleeting and Scarce)\n
+*Call to Action\n
+*Status Reports\n
+*How-to-Tips\n
+*Simple Reminders and Planning Prompts\n
+(When you have many opportunities to Influence User)\n
+*Decision-Making Support\n
+*Behavior Change Games\n
+*Planners\n
+*Gamification\n
+*Social Sharing\n
+*Reminders\n
+*Tutorials\n
+*Goal Trackers\n
+UX Best Practices:\n
+(Getting Users Attention)\n
+*Tell User What the Action is and Ask for it\n
+*Make it Clear, Where to Act\n
+*Clear the Page of Distractions\n
+(Get a Favorable Conscious Evaluation)\n
+*Prime User-Relevant Associations\n
+*Leverage Loss Aversion\n
+*Use Peer Comparisons\n
+*Use Competition\n
+*Avoid Cognitive Overhead\n
+*Avoid Choice Overload\n
+*Avoid Direct Payments\n
+(Creating Urgency to Act Now)\n
+*Frame Text to Avoid Temporal Myopia\n
+*Remind of Prior Commitment to Act\n
+*Make Commitment to Friends\n
+*Make Reward Scarce\n
+(Getting Positive Intuitive Reaction)\n
+               *Make UI Professional and Beautiful\n
+               *Deploy Social Proof\n
+               *Deploy Strong Authority on Subject\n
+               *Be Authentic and Personal\n
+(Make sure Users can Easily do it)\n
+              *Elicit Implementation Intentions\n
+              *Default Everything\n
+              *Lessen the Burden of Action/Info.\n
+              *Deploy Peer Comparisons\n
 
-Measuring the Impact:
-(Testing)
-           *Incremental A/B Testing
-           *Multivariate Testing
-               -Gather Lessons Learned
+Measuring the Impact:\n
+(Testing)\n
+           *Incremental A/B Testing\n
+           *Multivariate Testing\n
+               -Gather Lessons Learned\n
 
 	</string>
     <string name="FrontContent">
--Internet
-How does the internet work?
-What is HTTP?
-What is Domain Name?
-What is hosting?
-DNS and how it works?
-Browsers ond how they work?
--HTML
-Learn the basics
-Writing Semantic HTML
-Forms and Validations
-Accessibility
-SEO Basics
--CSS
-Learn the basics
-Making Layouts
-Responsive Design
--JavaScript
-Learn the Basics
-Learn DOM Manipulation
-Fetch API/Ajax (XHR)
+-Internet\n
+How does the internet work?\n
+What is HTTP?\n
+What is Domain Name?\n
+What is hosting?\n
+DNS and how it works?\n
+Browsers ond how they work?\n
+-HTML\n
+Learn the basics\n
+Writing Semantic HTML\n
+Forms and Validations\n
+Accessibility\n
+SEO Basics\n
+-CSS\n
+Learn the basics\n
+Making Layouts\n
+Responsive Design\n
+-JavaScript\n
+Learn the Basics\n
+Learn DOM Manipulation\n
+Fetch API/Ajax (XHR)\n
 
 
--VCS Hosting
-GitHub
-GitLab
-Bitbucket
--Version Control Systems
-Git
--Package Managers
-Npm
-Pnpm
-Yarn
--Pick a Framework
-Angular
-Vuejs
-React
-Svelte
-Solid JS
-Qwik
--Writing CSS
-Tailwind
-Radix Ul
-Shadcn UI
--CSS Architecture
-BEM
+-VCS Hosting\n
+GitHub\n
+GitLab\n
+Bitbucket\n
+-Version Control Systems\n
+Git\n
+-Package Managers\n
+Npm\n
+Pnpm\n
+Yarn\n
+-Pick a Framework\n
+Angular\n
+Vuejs\n
+React\n
+Svelte\n
+Solid JS\n
+Qwik\n
+-Writing CSS\n
+Tailwindn\n
+Radix Ul\n
+Shadcn UI\n
+-CSS Architecture\n
+BEM\n
 
--CSS Preprocessors
-Sass
-PostCSS
--Build Tools
-Module Bundlers
-*vite
-*esbuild
-*webpack
-*rollup
-*parcel
-Task Runners
-*npm scripts
-Linters and Formatters
-*prettier
-*ESlint
--Testing your Apps
-Vitest
-Jest
-Playright
-Cypress
--Authentication Strategies JWT, CAuth, SSC, Basic Auth, Session Auth etc
--Web Security Basics
-HTML Templates
-Custom Elements
-Shadow DOM
--Type Checkers
-TypeScript
--Server Side Rendering (SSR)
-Angular
-* Universal
-Vuejs
-* Nuxtjs
-React
-* Nextjs
-* Remix
-Svelte
-* Svelte Kit
-- GraphQL
-Apollo
-Relay Modern
-- Static Site Generators
-Vuepress
-Astro
-Jekyll
-Elevent
-Hugo
-Next.js
-Nuxt.js
-Remix
+-CSS Preprocessors\n
+Sass\n
+PostCSS\n
+-Build Tools\n
+Module Bundlers\n
+*vite\n
+*esbuild\n
+*webpack\n
+*rollup\n
+*parcel\n
+Task Runners\n
+*npm scripts\n
+Linters and Formatters\n
+*prettier\n
+*ESlint\n
+-Testing your Apps\n
+Vitest\n
+Jest\n
+Playright\n
+Cypress\n
+-Authentication Strategies JWT, CAuth, SSC, Basic Auth, Session Auth etc\n
+-Web Security Basics\n
+HTML Templates\n
+Custom Elements\n
+Shadow DOM\n
+-Type Checkers\n
+TypeScript\n
+-Server Side Rendering (SSR)\n
+Angular\n
+* Universal\n
+Vuejs\n
+* Nuxtjs\n
+React\n
+* Nextjs\n
+* Remix\n
+Svelte\n
+* Svelte Kit\n
+- GraphQL\n
+Apollo\n
+Relay Modern\n
+- Static Site Generators\n
+Vuepress\n
+Astro\n
+Jekyll\n
+Elevent\n
+Hugo\n
+Next.js\n
+Nuxt.js\n
+Remix\n
+
+    </string>
+
+    <string name="info">
+   This App Was Created By EELU Graduation Project Team:\n
+        - Hosny Hany Hammad\n
+        <br>
+        </br>
+        - Amr Mosely Maher\n
+        <br>
+        </br>
+        - Hadir Maher El Sayed\n
+        <br>
+        </br>
+        - Bassant Hassib\n
+        <br>
+        </br>
+        - Basmala Ahmed Ali\n
+        <br>
+        </br>
+        - Asmaa Abdeldayem Wasel\n
+        <br>
+        </br>
+        - Yara Hazem Zahra\n
+        <br>
+        </br>
+        - Nada Mohamed Saleh\n
 
     </string>
 </resources>

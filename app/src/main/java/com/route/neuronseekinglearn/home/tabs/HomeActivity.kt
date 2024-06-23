@@ -11,6 +11,7 @@ import com.google.android.material.navigation.NavigationView
 import com.route.neuronseekinglearn.R
 import com.route.neuronseekinglearn.databinding.ActivityHomeBinding
 import com.route.neuronseekinglearn.home.tabs.home.HomeFragment
+import com.route.neuronseekinglearn.home.tabs.menu.HelpFragment
 import com.route.neuronseekinglearn.home.tabs.menu.ProfileFragment
 import com.route.neuronseekinglearn.login.LoginActivity
 
@@ -51,18 +52,21 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     .addToBackStack(null)
                     .commit()
             }
+
             R.id.dropList_navigate_profile -> {
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.fragment_container, ProfileFragment())
                     .addToBackStack(null)
                     .commit()
             }
+
             R.id.dropList_navigate_Help -> {
                 supportFragmentManager.beginTransaction()
-                    .replace(R.id.fragment_container, ProfileFragment())
+                    .replace(R.id.fragment_container, HelpFragment())
                     .addToBackStack(null)
                     .commit()
             }
+
             R.id.dropList_navigate_Logout -> {
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)

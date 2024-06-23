@@ -14,9 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/background"
-        android:padding="12dp"
-
-        >
+        android:padding="12dp">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/AppBar"
@@ -33,6 +31,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="@{()->viewModel.navigateToHome()}"
                     android:src="@drawable/arrowback_24" />
 
                 <TextView
@@ -57,18 +56,6 @@
             android:textSize="18dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/AppBar" />
-
-        <TextView
-            android:id="@+id/text_email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:text="@={viewModel.email}"
-            android:textColor="@color/primaryColor"
-            android:textSize="16dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/text_welcome" />
 
 
         <include
