@@ -1,13 +1,14 @@
 package com.route.neuronseekinglearn.register
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
+import com.google.firebase.firestore.auth.User
 import com.route.neuronseekinglearn.R
+import com.route.neuronseekinglearn.common.PreferencesManager
 import com.route.neuronseekinglearn.databinding.ActivityRegisterBinding
 import com.route.neuronseekinglearn.home.tabs.HomeActivity
 import com.route.neuronseekinglearn.login.LoginActivity
@@ -38,6 +39,7 @@ class RegisterActivity : AppCompatActivity() {
     private fun handleEvents(registerEvent: RegisterEvent?) {
         when (registerEvent) {
             RegisterEvent.NavigateToHome -> {
+                savePreference()
                 navigateToHome()
             }
 
@@ -49,6 +51,20 @@ class RegisterActivity : AppCompatActivity() {
 
             }
         }
+    }
+
+    private fun savePreference() {
+        val preferencesManager = PreferencesManager(this)
+
+        val user = com.route.neuronseekinglearn.model.User(
+            userName = viewModel.username.value,
+            email = viewModel.email.value
+        )
+        preferencesManager.saveUserData(user)
+        preferencesManager.setUserLoginState(true)
+
+
+        println("User Name after "+preferencesManager.getSavedUser().userName)
     }
 
     private fun initViews() {

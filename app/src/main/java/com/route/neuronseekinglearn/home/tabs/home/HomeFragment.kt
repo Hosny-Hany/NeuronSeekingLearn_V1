@@ -30,7 +30,6 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this)[HomeViewModel::class.java]
         initViews()
-        println("View Mod")
     }
 
     private fun initViews() {
